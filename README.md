@@ -1,5 +1,8 @@
 # ProjectBasedOrgs
 
+Final Project for CSDS341: Introduction to Database Systems at Case Western Reserve University
+Project members: Prarthana Gajjala, Nivita Patri, Mehlam Saifudeen
+
 Every university has at least one project-based organization, some of the most
 notable are Girls Who Code, Engineers Without Borders, and even Hacker Society.
 Most of these projects consist of producing quality deliverables under a certain timeline,
