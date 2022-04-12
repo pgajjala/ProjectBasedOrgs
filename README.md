@@ -32,3 +32,9 @@ Technologies used:
 For reference for teammates
 - https://www.tutorialspoint.com/sqlite/sqlite_java.htm
 
+Office hours notes 4/11
+- 5 to 10 queries
+- difficulty doesnt matter
+- technology sorting has to be a Java solution
+- print out tables
+- show all results from each query
