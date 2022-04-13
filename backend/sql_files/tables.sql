@@ -9,3 +9,4 @@ CREATE TABLE testDB.Persons (
 
 INSERT INTO testDB.Persons (PersonID, LastName, FirstName, Addr, City)
 VALUE ('1', 'Gajjala', 'Prarthana', '123 Main Street', 'Cleveland');
+DROP DATABASE testDB;
