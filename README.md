@@ -1,5 +1,8 @@
 # ProjectBasedOrgs
 
+Final Project for CSDS341: Introduction to Database Systems at Case Western Reserve University
+Project members: Prarthana Gajjala, Nivita Patri, Mehlam Saifudeen
+
 Every university has at least one project-based organization, some of the most
 notable are Girls Who Code, Engineers Without Borders, and even Hacker Society.
 Most of these projects consist of producing quality deliverables under a certain timeline,
@@ -29,3 +32,9 @@ Technologies used:
 For reference for teammates
 - https://www.tutorialspoint.com/sqlite/sqlite_java.htm
 
+Office hours notes 4/11
+- 5 to 10 queries
+- difficulty doesnt matter
+- technology sorting has to be a Java solution
+- print out tables
+- show all results from each query
