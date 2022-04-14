@@ -5,7 +5,7 @@ import java.lang.*;
 import org.apache.ibatis.jdbc.ScriptRunner;
 public class MySQL_JDBC {
 
-   static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/?user=projectbasedorgs";
+   static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/";
    static final String USER = "projectbasedorgs";
    static final String PASS = "Pass!23";
 
