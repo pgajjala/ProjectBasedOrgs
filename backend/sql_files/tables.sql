@@ -20,7 +20,7 @@ CREATE TABLE `official_organization` (
   PRIMARY KEY (`org_name`),
   UNIQUE KEY `org_name_UNIQUE` (`org_name`),
   UNIQUE KEY `club_name_UNIQUE` (`club_name`)
-)
+);
 
 CREATE TABLE `project` (
   `project_id` int NOT NULL AUTO_INCREMENT,
@@ -32,7 +32,7 @@ CREATE TABLE `project` (
   PRIMARY KEY (`project_id`),
   UNIQUE KEY `project_id_UNIQUE` (`project_id`),
   UNIQUE KEY `project_title_UNIQUE` (`project_title`)
-)
+);
 
 CREATE TABLE `project_based_club` (
   `club_name` varchar(100) NOT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE `project_based_club` (
   `contact_email` varchar(100) NOT NULL,
   PRIMARY KEY (`club_name`),
   UNIQUE KEY `club_name_UNIQUE` (`club_name`)
-)
+);
 
 CREATE TABLE `registered` (
   `university_name` varchar(500) NOT NULL,
@@ -50,7 +50,7 @@ CREATE TABLE `registered` (
   UNIQUE KEY `club_name_UNIQUE` (`club_name`),
   CONSTRAINT `club_name` FOREIGN KEY (`club_name`) REFERENCES `project_based_club` (`club_name`),
   CONSTRAINT `university_name` FOREIGN KEY (`university_name`) REFERENCES `university` (`university_name`)
-)
+);
 
 CREATE TABLE `registered` (
   `university_name` varchar(500) NOT NULL,
@@ -59,7 +59,7 @@ CREATE TABLE `registered` (
   UNIQUE KEY `club_name_UNIQUE` (`club_name`),
   CONSTRAINT `club_name` FOREIGN KEY (`club_name`) REFERENCES `project_based_club` (`club_name`),
   CONSTRAINT `university_name` FOREIGN KEY (`university_name`) REFERENCES `university` (`university_name`)
-)
+);
 
 
 CREATE TABLE `university` (
@@ -68,7 +68,7 @@ CREATE TABLE `university` (
   `website` varchar(500) NOT NULL,
   PRIMARY KEY (`university_name`),
   UNIQUE KEY `university_name_UNIQUE` (`university_name`)
-)
+);
 
 CREATE TABLE `utilizes` (
   `project_id` int NOT NULL,
@@ -77,7 +77,7 @@ CREATE TABLE `utilizes` (
   UNIQUE KEY `project_id_UNIQUE` (`project_id`),
   CONSTRAINT `project_id` FOREIGN KEY (`project_id`) REFERENCES `project` (`project_id`),
   CONSTRAINT `technology_name` FOREIGN KEY (`technology_name`) REFERENCES `technology` (`technology_name`)
-)
+);
 
 CREATE TABLE `works_on` (
   `project_id` int NOT NULL,
@@ -85,6 +85,6 @@ CREATE TABLE `works_on` (
   UNIQUE KEY `project_id_UNIQUE` (`project_id`),
   UNIQUE KEY `club_name_UNIQUE` (`club_name`),
   CONSTRAINT `works_on_ibfk_1` FOREIGN KEY (`project_id`) REFERENCES `project` (`project_id`)
-)
+);
 
 
