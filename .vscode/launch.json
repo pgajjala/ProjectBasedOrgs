@@ -9,6 +9,13 @@
             "name": "Launch MySQL_JDBC",
             "request": "launch",
             "mainClass": "MySQL_JDBC",
+            "projectName": "ProjectBasedOrgs_9dda4edb"
+        },
+        {
+            "type": "java",
+            "name": "Launch MySQL_JDBC",
+            "request": "launch",
+            "mainClass": "MySQL_JDBC",
             "projectName": "ProjectBasedOrgs_411f20e1"
         },
         {
