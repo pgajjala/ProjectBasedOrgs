@@ -15,12 +15,12 @@ public class MySQL_JDBC {
     * @param args
     * @throws Exception
     */
-   public static void main(String[] args) throws Exception{
+   public static void main(String[] args) throws Exception {
       Scanner fr = new Scanner(new File("untracked.txt"));
       DB_URL = fr.nextLine();
       // Open a connection
       try(Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
-         Statement stmt = conn.createStatement();
+         //Statement stmt = conn.createStatement();
       ) {		      
          ScriptRunner sr = new ScriptRunner(conn);
          Reader reader = new BufferedReader(new FileReader("backend/sql_files/tables.sql"));
