@@ -13,14 +13,14 @@ DROP DATABASE testDB;
 
 CREATE DATABASE project_based_orgs;
 CREATE TABLE official_organization (
-  org_name` varchar(1000) NOT NULL,
-  club_name` varchar(1000) NOT NULL,
-  exec_name` varchar(1000) NOT NULL,
-  contact_email` varchar(1000) NOT NULL,
-  website` varchar(1000) NOT NULL,
-  PRIMARY KEY (`org_name`),
-  UNIQUE KEY `org_name_UNIQUE` (`org_name`),
-  UNIQUE KEY `club_name_UNIQUE` (`club_name`)
+  org_name varchar(1000) NOT NULL,
+  club_name varchar(1000) NOT NULL,
+  exec_name varchar(1000) NOT NULL,
+  contact_email varchar(1000) NOT NULL,
+  website varchar(1000) NOT NULL,
+  PRIMARY KEY (org_name),
+  UNIQUE KEY org_name_UNIQUE (org_name),
+  UNIQUE KEY club_name_UNIQUE (club_name)
 );
 
 CREATE TABLE `project` (
