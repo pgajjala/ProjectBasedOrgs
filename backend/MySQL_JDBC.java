@@ -31,7 +31,7 @@ public class MySQL_JDBC {
          sr.runScript(reader);
 
          /*Query imported and read */
-         Reader queryreader = new BufferedReader(new FileReader("backend/sql_files/query6.sql"));
+         Reader queryreader = new BufferedReader(new FileReader("backend/sql_files/query5.sql"));
          sr.runScript(queryreader);
 
          System.out.println("Executed successfully");  
