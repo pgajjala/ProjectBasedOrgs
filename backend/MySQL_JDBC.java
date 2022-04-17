@@ -32,7 +32,7 @@ public class MySQL_JDBC {
          Reader reader = new BufferedReader(new FileReader("backend/sql_files/tables.sql"));
          sr.runScript(reader);
          /* Query imported and read */
-         Reader queryreader = new BufferedReader(new FileReader("backend/sql_files/query3.sql"));
+         Reader queryreader = new BufferedReader(new FileReader("backend/sql_files/query1.sql"));
 
          sr.runScript(queryreader);
 

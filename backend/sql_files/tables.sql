@@ -67,6 +67,7 @@ CREATE TABLE project_based_orgs.technology (
 DROP TABLE IF EXISTS project_based_orgs.works_on;
 CREATE TABLE project_based_orgs.works_on (
   project_id int NOT NULL,
+  project_title varchar (250) NOT NULL,
   club_name varchar(100) NOT NULL,
   UNIQUE KEY project_id_UNIQUE (project_id),
   UNIQUE KEY club_name_UNIQUE (club_name),
@@ -76,6 +77,7 @@ CREATE TABLE project_based_orgs.works_on (
 DROP TABLE IF EXISTS project_based_orgs.utilizes;
 CREATE TABLE project_based_orgs.utilizes (
   project_id int NOT NULL,
+  project_title varchar (250) NOT NULL,
   technology_name varchar(100) NOT NULL,
   UNIQUE KEY Utilizescol_UNIQUE (technology_name),
   UNIQUE KEY project_id_UNIQUE (project_id),
