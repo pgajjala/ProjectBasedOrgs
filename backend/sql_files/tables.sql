@@ -18,7 +18,7 @@ DROP TABLE IF EXISTS project_based_orgs.project;
 CREATE TABLE project_based_orgs.project (
   project_id int NOT NULL AUTO_INCREMENT,
   project_contact varchar(250) NOT NULL,
-  description varchar(250) NOT NULL,
+  project_description varchar(250) NOT NULL,
   budget int DEFAULT NULL,
   time_interval varchar(250) DEFAULT NULL,
   project_title varchar(250) NOT NULL,
@@ -30,7 +30,8 @@ CREATE TABLE project_based_orgs.project (
 DROP TABLE IF EXISTS project_based_orgs.university;
 CREATE TABLE project_based_orgs.university (
   university_name varchar(500) NOT NULL,
-  address varchar(500) DEFAULT NULL,
+  city varchar(500) DEFAULT NULL,
+  u_state varchar(500) DEFAULT NULL,
   website varchar(500) NOT NULL,
   PRIMARY KEY (university_name),
   UNIQUE KEY university_name_UNIQUE (university_name)
