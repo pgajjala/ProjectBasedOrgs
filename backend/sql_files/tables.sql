@@ -1,16 +1,4 @@
-CREATE DATABASE testDB;
-CREATE TABLE testDB.Persons (
-    PersonID int,
-    LastName varchar(255),
-    FirstName varchar(255),
-    Addr varchar(255),
-    City varchar(255)
-);
-
-INSERT INTO testDB.Persons (PersonID, LastName, FirstName, Addr, City)
-VALUE ('1', 'Gajjala', 'Prarthana', '123 Main Street', 'Cleveland');
-DROP DATABASE testDB;
-
+CREATE DATABASE project_based_orgs;
 CREATE TABLE project_based_orgs.official_organization (
   org_name varchar(1000) NOT NULL,
   club_name varchar(1000) NOT NULL,
