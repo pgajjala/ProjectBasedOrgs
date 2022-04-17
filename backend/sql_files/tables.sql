@@ -37,7 +37,7 @@ CREATE TABLE project_based_orgs.registered (
   UNIQUE KEY university_name_UNIQUE (university_name),
   UNIQUE KEY club_name_UNIQUE (club_name),
   CONSTRAINT club_name FOREIGN KEY (club_name) REFERENCES project_based_club (club_name),
-  CONSTRAINT university_name FOREIGN KEY (university_name) REFERENCES university (university_name`)
+  CONSTRAINT university_name FOREIGN KEY (university_name) REFERENCES university (university_name)
 );
 
 CREATE TABLE project_based_orgs.registered (
@@ -50,7 +50,7 @@ CREATE TABLE project_based_orgs.registered (
 );
 
 
-CREATE TABLE university (
+CREATE TABLE project_based_orgs.university (
   university_name varchar(500) NOT NULL,
   address varchar(500) DEFAULT NULL,
   website varchar(500) NOT NULL,
