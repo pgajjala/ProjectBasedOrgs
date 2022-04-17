@@ -1,4 +1,8 @@
+
+DROP DATABASE IF EXISTS project_based_orgs;
 CREATE DATABASE project_based_orgs;
+
+DROP TABLE IF EXISTS project_based_orgs.official_organization;
 CREATE TABLE project_based_orgs.official_organization (
   org_name varchar(250) NOT NULL,
   club_name varchar(250) NOT NULL,
@@ -10,6 +14,7 @@ CREATE TABLE project_based_orgs.official_organization (
   UNIQUE KEY club_name_UNIQUE (club_name)
 );
 
+DROP TABLE IF EXISTS project_based_orgs.project;
 CREATE TABLE project_based_orgs.project (
   project_id int NOT NULL AUTO_INCREMENT,
   project_contact varchar(250) NOT NULL,
@@ -22,6 +27,7 @@ CREATE TABLE project_based_orgs.project (
   UNIQUE KEY project_title_UNIQUE (project_title)
 );
 
+DROP TABLE IF EXISTS project_based_orgs.university;
 CREATE TABLE project_based_orgs.university (
   university_name varchar(500) NOT NULL,
   address varchar(500) DEFAULT NULL,
@@ -30,6 +36,7 @@ CREATE TABLE project_based_orgs.university (
   UNIQUE KEY university_name_UNIQUE (university_name)
 );
 
+DROP TABLE IF EXISTS project_based_orgs.project_based_club;
 CREATE TABLE project_based_orgs.project_based_club (
   club_name varchar(100) NOT NULL,
   president_name varchar(100) NOT NULL,
@@ -39,6 +46,7 @@ CREATE TABLE project_based_orgs.project_based_club (
   UNIQUE KEY club_name_UNIQUE (club_name)
 );
 
+DROP TABLE IF EXISTS project_based_orgs.registered;
 CREATE TABLE project_based_orgs.registered (
   university_name varchar(500) NOT NULL,
   club_name varchar(500) NOT NULL,
@@ -48,12 +56,14 @@ CREATE TABLE project_based_orgs.registered (
   CONSTRAINT university_name FOREIGN KEY (university_name) REFERENCES university (university_name)
 );
 
+DROP TABLE IF EXISTS project_based_orgs.technology;
 CREATE TABLE project_based_orgs.technology (
   technology_name varchar(100) NOT NULL,
   PRIMARY KEY (technology_name),
   UNIQUE KEY technology_name_UNIQUE (technology_name)
 );
 
+DROP TABLE IF EXISTS project_based_orgs.works_on;
 CREATE TABLE project_based_orgs.works_on (
   project_id int NOT NULL,
   club_name varchar(100) NOT NULL,
@@ -62,6 +72,7 @@ CREATE TABLE project_based_orgs.works_on (
   CONSTRAINT works_on_ibfk_1 FOREIGN KEY (project_id) REFERENCES project (project_id)
 );
 
+DROP TABLE IF EXISTS project_based_orgs.utilizes;
 CREATE TABLE project_based_orgs.utilizes (
   project_id int NOT NULL,
   technology_name varchar(100) NOT NULL,
@@ -71,6 +82,4 @@ CREATE TABLE project_based_orgs.utilizes (
   CONSTRAINT technology_name FOREIGN KEY (technology_name) REFERENCES technology (technology_name)
 );
 
-DROP DATABASE project_based_orgs;
- 
 
