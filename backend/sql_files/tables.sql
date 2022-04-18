@@ -78,7 +78,6 @@ CREATE TABLE project_based_orgs.utilizes (
   project_title varchar (250) NOT NULL,
   technology_name varchar(100) NOT NULL,
   UNIQUE KEY Utilizescol_UNIQUE (technology_name),
-  CONSTRAINT project_title FOREIGN KEY (project_title) REFERENCES project (project_title),
   CONSTRAINT technology_name FOREIGN KEY (technology_name) REFERENCES technology (technology_name)
 );
 
