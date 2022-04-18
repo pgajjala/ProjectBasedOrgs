@@ -19,7 +19,7 @@ CREATE TABLE project_based_orgs.project (
   project_id int NOT NULL AUTO_INCREMENT,
   project_contact varchar(250) NOT NULL,
   project_description varchar(250) NOT NULL,
-  budget int DEFAULT NULL,
+  budget varchar(250) DEFAULT NULL,
   time_interval varchar(250) DEFAULT NULL,
   project_title varchar(250) NOT NULL,
   PRIMARY KEY (project_id),
@@ -66,22 +66,19 @@ CREATE TABLE project_based_orgs.technology (
 
 DROP TABLE IF EXISTS project_based_orgs.works_on;
 CREATE TABLE project_based_orgs.works_on (
-  project_id int NOT NULL,
   project_title varchar (250) NOT NULL,
   club_name varchar(100) NOT NULL,
-  UNIQUE KEY project_id_UNIQUE (project_id),
+  UNIQUE KEY project_title_UNIQUE (project_title),
   UNIQUE KEY club_name_UNIQUE (club_name),
-  CONSTRAINT works_on_ibfk_1 FOREIGN KEY (project_id) REFERENCES project (project_id)
+  CONSTRAINT project_title FOREIGN KEY (project_title) REFERENCES project (project_title)
 );
 
 DROP TABLE IF EXISTS project_based_orgs.utilizes;
 CREATE TABLE project_based_orgs.utilizes (
-  project_id int NOT NULL,
   project_title varchar (250) NOT NULL,
   technology_name varchar(100) NOT NULL,
   UNIQUE KEY Utilizescol_UNIQUE (technology_name),
-  UNIQUE KEY project_id_UNIQUE (project_id),
-  CONSTRAINT project_id FOREIGN KEY (project_id) REFERENCES project (project_id),
+  CONSTRAINT project_title FOREIGN KEY (project_title) REFERENCES project (project_title),
   CONSTRAINT technology_name FOREIGN KEY (technology_name) REFERENCES technology (technology_name)
 );
 
