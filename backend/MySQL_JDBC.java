@@ -43,8 +43,8 @@ public class MySQL_JDBC {
          sr.runScript(reader);
          
          /*Parsing CSV (fake data) files */
-         // Reader reader2 = new BufferedReader(new FileReader("backend/sql_files/parsedData.sql"));
-         // sr.runScript(reader2);
+          Reader reader2 = new BufferedReader(new FileReader("backend/sql_files/parsedData.sql"));
+          sr.runScript(reader2);
 
          /* Query imported and read, based on what user wants to do */
          Scanner s = new Scanner(System.in);
@@ -53,12 +53,14 @@ public class MySQL_JDBC {
             String querynum = printMenu();
             if (querynum.equals("7")) {
                newData(conn);
+            } else if (querynum.equals("8")) {
+               delData(conn);
             } else {
                Reader queryreader = new BufferedReader(new FileReader("backend/sql_files/query" + querynum + ".sql"));
 
                sr.runScript(queryreader);
                System.out.println("End of execution");
-            }
+            } 
             System.out.println("New query?");
             String ans = s.nextLine();
             if (ans.substring(0,1).toUpperCase().equals("N")){
@@ -87,9 +89,10 @@ public class MySQL_JDBC {
       System.out.println("5. I am the president of my club and I would like to collaborate with other presidents from other universities (List names of all presidents from from all project based clubs, sort by project based clubs)");
       System.out.println("6. I would like to be able to travel and visit other projects nearby (List the names of all projects from all project based organizations, sort by state)");
       System.out.println("7. I would like to add data");
+      System.out.println("8. I would like to remove data");
       Scanner s = new Scanner(System.in);
       String ans = s.nextLine();
-      while (!ans.equals("1") && !ans.equals("2")&&!ans.equals("3")&& !ans.equals("4") && !ans.equals("5") && !ans.equals("6") && !ans.equals("7")){
+      while (!ans.equals("1") && !ans.equals("2")&&!ans.equals("3")&& !ans.equals("4") && !ans.equals("5") && !ans.equals("6") && !ans.equals("7") && !ans.equals("8")){
          System.out.println("Inappropriate input, please try again!");
          ans = s.nextLine();
       }
@@ -282,5 +285,126 @@ public class MySQL_JDBC {
             //TODO: handle exception
          }
       }      
+   }
+
+   /**
+    * Menu for inserting new data. Can insert university, club, project, or technology.
+    * @see newUni
+    * @see newClub
+    * @param conn sql connection
+    */
+    public static void delData(Connection conn) {
+      System.out.println("What would you like to do?");
+      System.out.println("1. Delete a university");
+      System.out.println("2. Delete a club");
+      System.out.println("3. Delete a project");
+      System.out.println("4. Delete a technology");
+      Scanner s = new Scanner(System.in);
+      String ans = s.nextLine();
+      while (!ans.equals("1") && !ans.equals("2")&&!ans.equals("3")&& !ans.equals("4")){
+         System.out.println("Inappropriate input, please try again!");
+         ans = s.nextLine();
+      }
+      if (ans.equals("1")) {
+         delUni(conn);
+      } else if (ans.equals("2")) {
+         delClub(conn);
+      } else if (ans.equals("3")) {
+         delProj(conn);
+      } else if (ans.equals("4")) {
+         delTech(conn);
+      }
+   }
+
+   /**
+    * Deletes a university with name as determined my user. 
+    * @param conn sql connection 
+    */
+   public static void delUni(Connection conn) {
+      Scanner s = new Scanner(System.in);
+      System.out.println("University name?");
+      String uniname = s.nextLine();
+      while(uniname.equals(null) || uniname.equals("")) {
+         System.out.println("Inappropriate input, please try again!");
+         uniname = s.nextLine();
+      }
+
+      try (Statement stmt = conn.createStatement()){
+         String sql = "DELETE FROM project_based_orgs.university WHERE university_name = '" + uniname + "'";
+         stmt.executeUpdate(sql);
+         System.out.println("Deleted records from tables. ");
+      } catch (SQLException e) {
+         // TODO Auto-generated catch block
+         e.printStackTrace();
+      }
+   }
+
+   /**
+    * Deletes a club with name as determined my user. 
+    * @param conn sql connection 
+    */
+   public static void delClub(Connection conn) {
+      Scanner s = new Scanner(System.in);
+      System.out.println("Club name?");
+      String clubname = s.nextLine();
+      while(clubname.equals(null) || clubname.equals("")) {
+         System.out.println("Inappropriate input, please try again!");
+         clubname = s.nextLine();
+      }
+
+      try (Statement stmt = conn.createStatement()){
+         String sql = "DELETE FROM project_based_orgs.project_based_club WHERE club_name = '" + clubname + "'";
+         stmt.executeUpdate(sql);
+         System.out.println("Deleted records from tables. ");
+      } catch (SQLException e) {
+         // TODO Auto-generated catch block
+         e.printStackTrace();
+      }
+   }
+
+   /**
+    * Deletes a project with title as determined my user. 
+    * @param conn sql connection 
+    */
+   public static void delProj(Connection conn) {
+      Scanner s = new Scanner(System.in);
+      System.out.println("Project title?");
+      String projname = s.nextLine();
+      while(projname.equals(null) || projname.equals("")) {
+         System.out.println("Inappropriate input, please try again!");
+         projname = s.nextLine();
+      }
+
+      try (Statement stmt = conn.createStatement()){
+         String sql = "DELETE FROM project_based_orgs.project WHERE project_title = '" + projname + "'";
+         stmt.executeUpdate(sql);
+         System.out.println("Deleted records from tables. ");
+      } catch (SQLException e) {
+         // TODO Auto-generated catch block
+         e.printStackTrace();
+      }
+   }
+
+   /**
+    * Deletes a technology with name as determined my user. 
+    * @param conn sql connection 
+    */
+   public static void delTech(Connection conn) {
+      Scanner s = new Scanner(System.in);
+      System.out.println("Technology name?");
+      String techname = s.nextLine();
+      while(techname.equals(null) || techname.equals("")) {
+         System.out.println("Inappropriate input, please try again!");
+         techname = s.nextLine();
+      }
+
+      try (Statement stmt = conn.createStatement()){
+         String sql = "DELETE FROM project_based_orgs.technology WHERE technology_name = '" + techname + "'";
+         stmt.executeUpdate(sql);
+         System.out.println("Deleted records from tables. ");
+      } catch (SQLException e) {
+         // TODO Auto-generated catch block
+         e.printStackTrace();
+      }
    }
 }
