@@ -43,8 +43,8 @@ public class MySQL_JDBC {
          sr.runScript(reader);
          
          /*Parsing CSV (fake data) files */
-         Reader reader2 = new BufferedReader(new FileReader("backend/sql_files/parsedData.sql"));
-         sr.runScript(reader2);
+         // Reader reader2 = new BufferedReader(new FileReader("backend/sql_files/parsedData.sql"));
+         // sr.runScript(reader2);
 
          /* Query imported and read, based on what user wants to do */
          Scanner s = new Scanner(System.in);
@@ -104,7 +104,7 @@ public class MySQL_JDBC {
     */
    public static void newData(Connection conn) {
       System.out.println("What would you like to do?");
-      System.out.println("1. Register a new univeristy");
+      System.out.println("1. Register a new university");
       System.out.println("2. Register a new club");
       System.out.println("3. Register a new project");
       System.out.println("4. Register a new technology for your project");
@@ -233,7 +233,6 @@ public class MySQL_JDBC {
          stmt.executeUpdate(sql2);
          System.out.println("Inserted records into tables. ");
       } catch (SQLException e) {
-         // TODO Auto-generated catch block
          e.printStackTrace();
          try (Statement stmt = conn.createStatement()) {
             String sql1 = "DELETE FROM project_based_orgs.project WHERE project_title = '" + projtitle + "'";
@@ -273,7 +272,6 @@ public class MySQL_JDBC {
          stmt.executeUpdate(sql2);
          System.out.println("Inserted records into tables. ");
       } catch (SQLException e) {
-         // TODO Auto-generated catch block
          e.printStackTrace();
          try (Statement stmt = conn.createStatement()) {
             String sql1 = "DELETE FROM project_based_orgs.technology WHERE technology_name = '" + techname + "'";

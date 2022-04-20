@@ -53,8 +53,8 @@ CREATE TABLE project_based_orgs.registered (
   club_name varchar(500) NOT NULL,
   UNIQUE KEY university_name_UNIQUE (university_name),
   UNIQUE KEY club_name_UNIQUE (club_name),
-  CONSTRAINT club_name FOREIGN KEY (club_name) REFERENCES project_based_club (club_name),
-  CONSTRAINT university_name FOREIGN KEY (university_name) REFERENCES university (university_name)
+  CONSTRAINT club_name FOREIGN KEY (club_name) REFERENCES project_based_club (club_name) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT university_name FOREIGN KEY (university_name) REFERENCES university (university_name) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 DROP TABLE IF EXISTS project_based_orgs.technology;
@@ -70,7 +70,7 @@ CREATE TABLE project_based_orgs.works_on (
   club_name varchar(100) NOT NULL,
   UNIQUE KEY project_title_UNIQUE (project_title),
   UNIQUE KEY club_name_UNIQUE (club_name),
-  CONSTRAINT project_title FOREIGN KEY (project_title) REFERENCES project (project_title)
+  CONSTRAINT project_title FOREIGN KEY (project_title) REFERENCES project (project_title) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 DROP TABLE IF EXISTS project_based_orgs.utilizes;
@@ -78,7 +78,7 @@ CREATE TABLE project_based_orgs.utilizes (
   project_title varchar (250) NOT NULL,
   technology_name varchar(100) NOT NULL,
   UNIQUE KEY Utilizescol_UNIQUE (technology_name),
-  CONSTRAINT technology_name FOREIGN KEY (technology_name) REFERENCES technology (technology_name)
+  CONSTRAINT technology_name FOREIGN KEY (technology_name) REFERENCES technology (technology_name) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 
