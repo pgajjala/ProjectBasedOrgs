@@ -1,6 +1,15 @@
+
 import java.io.*;
 import java.sql.*;
 import java.util.*;
+
+import java.io.FileReader;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
+ 
+//import com.opencsv.CSVReader; //yelp i need to figure this out
+ 
 
 import java.lang.*;
 import org.apache.ibatis.jdbc.ScriptRunner;
@@ -19,16 +28,23 @@ public class MySQL_JDBC {
     * @throws Exception
     */
    public static void main(String[] args) throws Exception {
+
       Scanner fr = new Scanner(new File("untracked.txt"));
       DB_URL = fr.nextLine();
+     
       /* Open a connection*/
       try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
       // Statement stmt = conn.createStatement();
       ) {
+        
          /* Creates db and corresponding tables */
          ScriptRunner sr = new ScriptRunner(conn);
          Reader reader = new BufferedReader(new FileReader("backend/sql_files/tables.sql"));
          sr.runScript(reader);
+         
+         /*Parsing CSV (fake data) files */
+         Reader reader2 = new BufferedReader(new FileReader("backend/sql_files/parsedData.sql"));
+         sr.runScript(reader2);
 
          /* Query imported and read, based on what user wants to do */
          Scanner s = new Scanner(System.in);
@@ -49,8 +65,10 @@ public class MySQL_JDBC {
                run_again = false;
             }
          }
-         
 
+
+         
+           
       } catch (SQLException e) {
          e.printStackTrace();
       }
