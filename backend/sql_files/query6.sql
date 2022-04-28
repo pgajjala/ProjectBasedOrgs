@@ -4,4 +4,4 @@ WHERE u.university_name = r.university_name
 AND r.club_name = c.club_name
 AND c.club_name = w.club_name
 AND w.project_title = p.project_title
-GROUP BY u.u_state;
+ORDER BY u.u_state;

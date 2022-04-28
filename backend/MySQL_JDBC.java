@@ -4,13 +4,6 @@ import java.sql.*;
 import java.util.*;
 
 import java.io.FileReader;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.Statement;
- 
-//import com.opencsv.CSVReader; //yelp i need to figure this out
- 
-
 import java.lang.*;
 import org.apache.ibatis.jdbc.ScriptRunner;
 
@@ -87,7 +80,7 @@ public class MySQL_JDBC {
       System.out.println("Please select your query");
       System.out.println("1. I want to start a project and I have this available technology at my school (List the name of projects, project contact, and the technology they use, sorting by technology)");
       System.out.println("2. I want to start a project for my club but I only have this amount of time or this amount of money (List the name of projects and their time intervals and budget for all clubs)");
-      System.out.println("3. My school doesn't have X technology, I want to know if neighboring schools have any and what organizations they use it for (List all of the universities and the technologies they use, sorting by official organization)");
+      System.out.println("3. I want to use Arduino in my project, who else is doing that? (List all of the clubs who use Arduino in at least one of their projects)");
       System.out.println("4. I want to start a project for my specific project based club, but I need inspiration and examples to know where to begin (List the name of all projects from a project based club, list the club name as well)");
       System.out.println("5. I am the president of my club and I would like to collaborate with other presidents from other universities (List names of all presidents from from all project based clubs, sort by project based clubs)");
       System.out.println("6. I would like to be able to travel and visit other projects nearby (List the names of all projects from all project based organizations, sort by state)");
@@ -272,8 +265,7 @@ public class MySQL_JDBC {
       System.out.println("Project title?");
       String projName = s.nextLine();
       try(Statement stmt = conn.createStatement()){
-         String sql1 = "INSERT INTO project_based_orgs.technology VALUES ('" + techname + "')";
-         stmt.executeUpdate(sql1);
+         inserttech(techname, stmt);
          String sql2 = "INSERT INTO project_based_orgs.utilizes VALUES ('" + projName + "', '" + techname + "')";
          stmt.executeUpdate(sql2);
          System.out.println("Inserted records into tables. ");
@@ -288,6 +280,15 @@ public class MySQL_JDBC {
             //TODO: handle exception
          }
       }      
+   }
+
+   private static void inserttech(String techname, Statement stmt) throws SQLException {
+      try{
+         String sql1 = "INSERT INTO project_based_orgs.technology VALUES ('" + techname + "')";
+         stmt.executeUpdate(sql1);
+      } catch(Exception e) {
+         
+      }
    }
 
    /**
@@ -333,7 +334,9 @@ public class MySQL_JDBC {
       }
 
       try (Statement stmt = conn.createStatement()){
-         String sql = "DELETE FROM project_based_orgs.university WHERE university_name = '" + uniname + "'";
+         String sql = "DELETE FROM project_based_orgs.university U WHERE U.university_name = '" + uniname + "'";
+         stmt.executeUpdate(sql);
+         sql = "DELETE FROM project_based_orgs.registered R WHERE R.university_name = '" + uniname + "'";
          stmt.executeUpdate(sql);
          System.out.println("Deleted records from tables. ");
       } catch (SQLException e) {
