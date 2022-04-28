@@ -1,34 +1,601 @@
-club name,president first name,president last name,contact email,advisor first name,advisor last name,advisor name,president name
-Engineers Without Borders,Brianna,Harrison,b.harrison@randatmail.com,Emily,Bailey,Emily Bailey,Brianna Harrison
-Girls Who Code,Lydia,Turner,l.turner@randatmail.com,Alisa,Gibson,Alisa Gibson,Lydia Turner
-Hackers Society,Violet,Armstrong,v.armstrong@randatmail.com,Ryan,Phillips,Ryan Phillips,Violet Armstrong
-Biomedical Engineering Society,Maximilian,Spencer,m.spencer@randatmail.com,Charlotte,Evans,Charlotte Evans,Maximilian Spencer
-American Institute of Chemical Engineers,Miley,Baker,m.baker@randatmail.com,Frederick,Nelson,Frederick Nelson,Miley Baker
-Baja Sae,Preston,Mitchell,p.mitchell@randatmail.com,Heather,Cunningham,Heather Cunningham,Preston Mitchell
-Case Aeronautics Team,Roman,Elliott,r.elliott@randatmail.com,Alexander,Moore,Alexander Moore,Roman Elliott
-CWRU MedWish,Marcus,Morris,m.morris@randatmail.com,Miranda,Clark,Miranda Clark,Marcus Morris
-Case Rocket Team,Elian,Henderson,e.henderson@randatmail.com,Owen,Brown,Owen Brown,Elian Henderson
-Global Health Design Collaborative,Sawyer,Fowler,s.fowler@randatmail.com,Kelvin,Hamilton,Kelvin Hamilton,Sawyer Fowler
-Graduate Civil Engineering Student Association,Charlie,Cooper,c.cooper@randatmail.com,Dainton,Scott,Dainton Scott,Charlie Cooper
-Medical Technology Group,Adrianna,Turner,a.turner@randatmail.com,Ted,Harris,Ted Harris,Adrianna Turner
-oSTEM,Brooke,Richardson,b.richardson@randatmail.com,Agata,Roberts,Agata Roberts,Brooke Richardson
-Society of Hispanic Professional Engineers,Tara,Stewart,t.stewart@randatmail.com,Chester,Harris,Chester Harris,Tara Stewart
-Society of Women Engineers,Isabella,Andrews,i.andrews@randatmail.com,Walter,Davis,Walter Davis,Isabella Andrews
-Steel Bridge Team,Ashton,Perry,a.perry@randatmail.com,Jack,Fowler,Jack Fowler,Ashton Perry
-Theta Tau,Carlos,Henderson,c.henderson@randatmail.com,Alberta,Cooper,Alberta Cooper,Carlos Henderson
-Women in Science and Engineering Roundtable,Byron,Spencer,b.spencer@randatmail.com,Sam,Casey,Sam Casey,Byron Spencer
-American Marketing Association,Deanna,Warren,d.warren@randatmail.com,Alissa,Davis,Alissa Davis,Deanna Warren
-Association for Computing Machinery,Nicole,Grant,n.grant@randatmail.com,Savana,Bennett,Savana Bennett,Nicole Grant
-Case Neuroscience Society,Jack,Richardson,j.richardson@randatmail.com,Briony,Richards,Briony Richards,Jack Richardson
-Case University Circle Orchestra,Harold,Anderson,h.anderson@randatmail.com,Naomi,Chapman,Naomi Chapman,Harold Anderson
-CWRU Developer Student Club,Florrie,Parker,f.parker@randatmail.com,Victoria,Roberts,Victoria Roberts,Florrie Parker
-Data Science Club,Edgar,Farrell,e.farrell@randatmail.com,Maya,Morris,Maya Morris,Edgar Farrell
-Discussions Undergraduate Research Journal of CWRU,Gianna,Allen,g.allen@randatmail.com,Myra,Jones,Myra Jones,Gianna Allen
-Entrepreneurship Club,Tess,Ross,t.ross@randatmail.com,Jasmine,Craig,Jasmine Craig,Tess Ross
-Design For America,Sofia,Henderson,s.henderson@randatmail.com,Reid,Campbell,Reid Campbell,Sofia Henderson
-Great Lakes Energy Institute,Myra,Parker,m.parker@randatmail.com,Patrick,Thompson,Patrick Thompson,Myra Parker
-Journal Club,Lily,Smith,l.smith@randatmail.com,Kate,Miller,Kate Miller,Lily Smith
-Math Club,Anna,Cunningham,a.cunningham@randatmail.com,Amy,Murphy,Amy Murphy,Anna Cunningham
-Physics and Astronomy Club,Eddy,Clark,e.clark@randatmail.com,Preston,Mitchell,Preston Mitchell,Eddy Clark
-Robotics Club,David,Brown,d.brown@randatmail.com,Tess,Murphy,Tess Murphy,David Brown
-Women in Economics,Adele,Foster,a.foster@randatmail.com,Lenny,Harrison,Lenny Harrison,Adele Foster
+club name,president name,advisor name,contact email
+Case Western Reserve University Math Club,Patrick Harris,Prarthana Gajjala,p.evans@randatmail.com
+Case Western Reserve University Girls Who Code,Dale Andrews,Lana Ross,l.ross@randatmail.com
+Case Western Reserve University Hackers Society,Adrianna Walker,Paul Adams,p.adams@randatmail.com
+Case Western Reserve University Biomedical Engineering Society,Marcus Ellis,Maximilian Tucker,m.tucker@randatmail.com
+Case Western Reserve University American Institute of Chemical Engineers,Haris Johnson,Camila Scott,c.scott@randatmail.com
+Case Western Reserve University Baja Sae,Adrian Hawkins,Reid Phillips,r.phillips@randatmail.com
+Case Western Reserve University Aeronautics Team,Mary Douglas,Belinda Wright,b.wright@randatmail.com
+Case Western Reserve University MedWish,April Carroll,Frederick Murphy,f.murphy@randatmail.com
+Case Western Reserve University Rocket Team,Jordan Riley,Gianna Reed,g.reed@randatmail.com
+Case Western Reserve University Global Health Design Collaborative,Arthur Gray,Dexter Crawford,d.crawford@randatmail.com
+Case Western Reserve University Graduate Civil Engineering Student Association,Kelvin Higgins,Annabella Anderson,a.anderson@randatmail.com
+Case Western Reserve University Medical Technology Group,Ellia Mason,Jared Farrell,j.farrell@randatmail.com
+Case Western Reserve University oSTEM,Albert Brown,Leonardo Turner,l.turner@randatmail.com
+Case Western Reserve University Society of Hispanic Professional Engineers,Charlotte Payne,Preston Andrews,p.andrews@randatmail.com
+Case Western Reserve University Society of Women Engineers,Alisa Foster,Amanda Johnston,a.johnston@randatmail.com
+Case Western Reserve University Steel Bridge Team,Lyndon Ferguson,Walter Allen,w.allen@randatmail.com
+Case Western Reserve University Theta Tau,Paige Grant,Adele Henderson,a.henderson@randatmail.com
+Case Western Reserve University Women in Science and Engineering Roundtable,Catherine Martin,Sam Thomas,s.thomas@randatmail.com
+Case Western Reserve University American Marketing Association,Maximilian Wright,Richard Henderson,r.henderson@randatmail.com
+Case Western Reserve University Association for Computing Machinery,Jared Ferguson,Wilson Perkins,w.perkins@randatmail.com
+Case Western Reserve University Neuroscience Society,Kate Harper,Thomas Harris,t.harris@randatmail.com
+Case Western Reserve University Orchestra,Samantha Robinson,Lucia Rogers,l.rogers@randatmail.com
+Case Western Reserve University Developer Student Club,Daniel Morgan,William Moore,w.moore@randatmail.com
+Case Western Reserve University Design For America,Marcus Brown,Chloe Lloyd,c.lloyd@randatmail.com
+Case Western Reserve University Discussions Undergraduate Research Journal,David Ross,Dainton Turner,d.turner@randatmail.com
+Ohio State University   Engineers Without Borders,Penelope Craig,Paige Wells,p.wells@randatmail.com
+Ohio State University   Girls Who Code,Paige Anderson,Rosie Jones,r.jones@randatmail.com
+Ohio State University   Hackers Society,Lydia Barnes,Evelyn Russell,e.russell@randatmail.com
+Ohio State University   Biomedical Engineering Society,Marcus West,Ryan Anderson,r.anderson@randatmail.com
+Ohio State University   American Institute of Chemical Engineers,Harold Riley,Alberta Robinson,a.robinson@randatmail.com
+Ohio State University   Baja Sae,Dexter Thomas,Maddie Murray,m.murray@randatmail.com
+Ohio State University   Aeronautics Team,Chester Phillips,Derek Williams,d.williams@randatmail.com
+Ohio State University   MedWish,Arnold Wright,Nicholas Henderson,n.henderson@randatmail.com
+Ohio State University   Rocket Team,Roman Barnes,Myra Watson,m.watson@randatmail.com
+Ohio State University   Global Health Design Collaborative,Valeria Hawkins,Deanna Lloyd,d.lloyd@randatmail.com
+Ohio State University   Graduate Civil Engineering Student Association,Martin Richardson,Alan Campbell,a.campbell@randatmail.com
+Ohio State University   Medical Technology Group,Eric Roberts,Maya Hall,m.hall@randatmail.com
+Ohio State University   oSTEM,Daisy Spencer,Emily Bailey,e.bailey@randatmail.com
+Ohio State University   Society of Hispanic Professional Engineers,Savana Carroll,Carlos Kelly,c.kelly@randatmail.com
+Ohio State University   Society of Women Engineers,Kate Morris,Ted Allen,t.allen@randatmail.com
+Ohio State University   Steel Bridge Team,Arthur Thompson,Robert Richardson,r.richardson@randatmail.com
+Ohio State University   Theta Tau,Daryl Turner,Luke Walker,l.walker@randatmail.com
+Ohio State University   Women in Science and Engineering Roundtable,Julian Morrison,Frederick Andrews,f.andrews@randatmail.com
+Ohio State University   American Marketing Association,Edwin Ryan,Ryan Johnson,r.johnson@randatmail.com
+Ohio State University   Association for Computing Machinery,Stuart Anderson,Ryan Richardson,r.richardson@randatmail.com
+Ohio State University   Neuroscience Society,Martin Tucker,Derek Perry,d.perry@randatmail.com
+Ohio State University   Orchestra,Alexia Henderson,Chester Carroll,c.carroll@randatmail.com
+Ohio State University   Developer Student Club,Briony Clark,Penelope Hamilton,p.hamilton@randatmail.com
+Ohio State University   Design For America,Paul Morris,Richard Wells,r.wells@randatmail.com
+Ohio State University   Discussions Undergraduate Research Journal,Elise Williams,Martin Grant,m.grant@randatmail.com
+Indiana University Engineers Without Borders,Eddy Riley,Violet Thomas,v.thomas@randatmail.com
+Indiana University Girls Who Code,Natalie Brooks,Samantha Craig,s.craig@randatmail.com
+Indiana University Hackers Society,Steven Turner,Freddie Craig,f.craig@randatmail.com
+Indiana University Biomedical Engineering Society,Cadie Harris,Brad Ellis,b.ellis@randatmail.com
+Indiana University American Institute of Chemical Engineers,Arthur Anderson,Bruce Brooks,b.brooks@randatmail.com
+Indiana University Baja Sae,Alina Douglas,Aida Richards,a.richards@randatmail.com
+Indiana University Aeronautics Team,Nicholas Bailey,Kate Adams,k.adams@randatmail.com
+Indiana University MedWish,Emily Barrett,Ellia Wright,e.wright@randatmail.com
+Indiana University Rocket Team,Lucas West,Cherry Andrews,c.andrews@randatmail.com
+Indiana University Global Health Design Collaborative,Sienna Tucker,Jessica Davis,j.davis@randatmail.com
+Indiana University Graduate Civil Engineering Student Association,Oscar Fowler,Lucy Brooks,l.brooks@randatmail.com
+Indiana University Medical Technology Group,Patrick Barnes,Lucia Cole,l.cole@randatmail.com
+Indiana University oSTEM,Kellan Robinson,Ted Farrell,t.farrell@randatmail.com
+Indiana University Society of Hispanic Professional Engineers,Paul Fowler,April Thompson,a.thompson@randatmail.com
+Indiana University Society of Women Engineers,Cherry Williams,Tess Davis,t.davis@randatmail.com
+Indiana University Steel Bridge Team,Darcy Kelley,Henry Smith,h.smith@randatmail.com
+Indiana University Theta Tau,Frederick Harper,William Mitchell,w.mitchell@randatmail.com
+Indiana University Women in Science and Engineering Roundtable,Maximilian Kelly,Miranda Baker,m.baker@randatmail.com
+Indiana University American Marketing Association,Adison Perry,Jessica Anderson,j.anderson@randatmail.com
+Indiana University Association for Computing Machinery,Arthur Smith,Dexter Brown,d.brown@randatmail.com
+Indiana University Neuroscience Society,Mike Carter,John Kelley,j.kelley@randatmail.com
+Indiana University Orchestra,Charlotte Anderson,Jacob Ferguson,j.ferguson@randatmail.com
+Indiana University Developer Student Club,James Lloyd,Alexia Barnes,a.barnes@randatmail.com
+Indiana University Design For America,Arianna Thomas,Myra Perkins,m.perkins@randatmail.com
+Indiana University Discussions Undergraduate Research Journal,Marcus Ryan,Albert Chapman,a.chapman@randatmail.com
+University of Pennsylvania  Engineers Without Borders,Ashton Gray,Adelaide Hill,a.hill@randatmail.com
+University of Pennsylvania  Girls Who Code,Dainton Miller,Aida Johnson,a.johnson@randatmail.com
+University of Pennsylvania  Hackers Society,Steven Mason,Valeria Edwards,v.edwards@randatmail.com
+University of Pennsylvania  Biomedical Engineering Society,Kimberly Carroll,Tiana Miller,t.miller@randatmail.com
+University of Pennsylvania  American Institute of Chemical Engineers,Victor Tucker,Fenton Casey,f.casey@randatmail.com
+University of Pennsylvania  Baja Sae,April Evans,Abraham Cooper,a.cooper@randatmail.com
+University of Pennsylvania  Aeronautics Team,Daisy Grant,Naomi Taylor,n.taylor@randatmail.com
+University of Pennsylvania  MedWish,Dainton Campbell,Justin Owens,j.owens@randatmail.com
+University of Pennsylvania  Rocket Team,Audrey Scott,Ada Cameron,a.cameron@randatmail.com
+University of Pennsylvania  Global Health Design Collaborative,Jenna Anderson,Byron Harper,b.harper@randatmail.com
+University of Pennsylvania  Graduate Civil Engineering Student Association,Sam Williams,Alexia Wright,a.wright@randatmail.com
+University of Pennsylvania  Medical Technology Group,Aston Baker,Adam Watson,a.watson@randatmail.com
+University of Pennsylvania  oSTEM,Eric Hamilton,Elian Clark,e.clark@randatmail.com
+University of Pennsylvania  Society of Hispanic Professional Engineers,Nicole Mason,Jordan Cameron,j.cameron@randatmail.com
+University of Pennsylvania  Society of Women Engineers,Albert Farrell,Roland Hawkins,r.hawkins@randatmail.com
+University of Pennsylvania  Steel Bridge Team,Melanie Clark,Charlie Richards,c.richards@randatmail.com
+University of Pennsylvania  Theta Tau,Frederick Robinson,Brad Bailey,b.bailey@randatmail.com
+University of Pennsylvania  Women in Science and Engineering Roundtable,Jasmine Clark,Owen Johnston,o.johnston@randatmail.com
+University of Pennsylvania  American Marketing Association,Rosie Douglas,Maria Wilson,m.wilson@randatmail.com
+University of Pennsylvania  Association for Computing Machinery,John Foster,Edgar West,e.west@randatmail.com
+University of Pennsylvania  Neuroscience Society,Maya Kelley,Byron Montgomery,b.montgomery@randatmail.com
+University of Pennsylvania  Orchestra,Paul Richards,Hailey Holmes,h.holmes@randatmail.com
+University of Pennsylvania  Developer Student Club,William Russell,Mike Anderson,m.anderson@randatmail.com
+University of Pennsylvania  Design For America,Alisa Davis,Adele Robinson,a.robinson@randatmail.com
+University of Pennsylvania  Discussions Undergraduate Research Journal,Lilianna Casey,Chloe Chapman,c.chapman@randatmail.com
+University of Illinois Chicago Engineers Without Borders,Luke Murray,Haris Moore,h.moore@randatmail.com
+University of Illinois Chicago Girls Who Code,Patrick Mason,James Stewart,j.stewart@randatmail.com
+University of Illinois Chicago Hackers Society,Harold Andrews,Reid Farrell,r.farrell@randatmail.com
+University of Illinois Chicago Biomedical Engineering Society,Lyndon Foster,Maria Morris,m.morris@randatmail.com
+University of Illinois Chicago American Institute of Chemical Engineers,Audrey Bailey,Maria Hamilton,m.hamilton@randatmail.com
+University of Illinois Chicago Baja Sae,Honey Williams,Sabrina Ross,s.ross@randatmail.com
+University of Illinois Chicago Aeronautics Team,Belinda West,Eddy Russell,e.russell@randatmail.com
+University of Illinois Chicago MedWish,Cadie Hunt,Audrey Stewart,a.stewart@randatmail.com
+University of Illinois Chicago Rocket Team,Heather Robinson,Martin Montgomery,m.montgomery@randatmail.com
+University of Illinois Chicago Global Health Design Collaborative,Kirsten Campbell,Wilson Carter,w.carter@randatmail.com
+University of Illinois Chicago Graduate Civil Engineering Student Association,Tiana Carter,Alberta Scott,a.scott@randatmail.com
+University of Illinois Chicago Medical Technology Group,Violet Hamilton,Wilson Howard,w.howard@randatmail.com
+University of Illinois Chicago oSTEM,Cadie Rogers,Sam Grant,s.grant@randatmail.com
+University of Illinois Chicago Society of Hispanic Professional Engineers,Carina Armstrong,Adrian Brooks,a.brooks@randatmail.com
+University of Illinois Chicago Society of Women Engineers,Edgar Roberts,Daryl Howard,d.howard@randatmail.com
+University of Illinois Chicago Steel Bridge Team,Violet Thomas,Heather Bennett,h.bennett@randatmail.com
+University of Illinois Chicago Theta Tau,Connie Morris,Edith Allen,e.allen@randatmail.com
+University of Illinois Chicago Women in Science and Engineering Roundtable,James Anderson,Lilianna Kelly,l.kelly@randatmail.com
+University of Illinois Chicago American Marketing Association,Eleanor Davis,Maximilian Edwards,m.edwards@randatmail.com
+University of Illinois Chicago Association for Computing Machinery,Eddy Richardson,Michael Mason,m.mason@randatmail.com
+University of Illinois Chicago Neuroscience Society,Lenny Parker,Alexander Richardson,a.richardson@randatmail.com
+University of Illinois Chicago Orchestra,Michelle Moore,Alan Bennett,a.bennett@randatmail.com
+University of Illinois Chicago Developer Student Club,Abraham Morris,Daryl Cameron,d.cameron@randatmail.com
+University of Illinois Chicago Design For America,Alberta Dixon,Miley Myers,m.myers@randatmail.com
+University of Illinois Chicago Discussions Undergraduate Research Journal,Miley Clark,Martin Taylor,m.taylor@randatmail.com
+University of Illinois Urbana Champaign Engineers Without Borders,Kelsey Morris,Lenny Turner,l.turner@randatmail.com
+University of Illinois Urbana Champaign Girls Who Code,Chester Foster,Vanessa Robinson,v.robinson@randatmail.com
+University of Illinois Urbana Champaign Hackers Society,James Warren,Nivita Patri,c.mitchell@randatmail.com
+University of Illinois Urbana Champaign Biomedical Engineering Society,Amelia Bennett,Lana Nelson,l.nelson@randatmail.com
+University of Illinois Urbana Champaign American Institute of Chemical Engineers,Sabrina Perry,Aston Lloyd,a.lloyd@randatmail.com
+University of Illinois Urbana Champaign Baja Sae,Miller Miller,Maria Armstrong,m.armstrong@randatmail.com
+University of Illinois Urbana Champaign Aeronautics Team,Savana Spencer,Kristian Perkins,k.perkins@randatmail.com
+University of Illinois Urbana Champaign MedWish,Charlotte Parker,Nicole Morris,n.morris@randatmail.com
+University of Illinois Urbana Champaign Rocket Team,Patrick Warren,Adele Clark,a.clark@randatmail.com
+University of Illinois Urbana Champaign Global Health Design Collaborative,John Miller,April Dixon,a.dixon@randatmail.com
+University of Illinois Urbana Champaign Graduate Civil Engineering Student Association,Paige Cunningham,Alfred West,a.west@randatmail.com
+University of Illinois Urbana Champaign Medical Technology Group,Jordan Ellis,Garry Russell,g.russell@randatmail.com
+University of Illinois Urbana Champaign oSTEM,Kelvin Reed,Amelia Edwards,a.edwards@randatmail.com
+University of Illinois Urbana Champaign Society of Hispanic Professional Engineers,Garry Edwards,Adrian Roberts,a.roberts@randatmail.com
+University of Illinois Urbana Champaign Society of Women Engineers,Alan Williams,Penelope Richardson,p.richardson@randatmail.com
+University of Illinois Urbana Champaign Steel Bridge Team,Oscar Barrett,Lucia Kelly,l.kelly@randatmail.com
+University of Illinois Urbana Champaign Theta Tau,Lilianna Edwards,Valeria Hunt,v.hunt@randatmail.com
+University of Illinois Urbana Champaign Women in Science and Engineering Roundtable,Owen Harper,Sawyer Jones,s.jones@randatmail.com
+University of Illinois Urbana Champaign American Marketing Association,Tess Rogers,Alfred Alexander,a.alexander@randatmail.com
+University of Illinois Urbana Champaign Association for Computing Machinery,Rebecca Scott,Dominik Wells,d.wells@randatmail.com
+University of Illinois Urbana Champaign Neuroscience Society,Wilson Moore,Albert Hall,a.hall@randatmail.com
+University of Illinois Urbana Champaign Orchestra,Tiana Jones,Preston Barnes,p.barnes@randatmail.com
+University of Illinois Urbana Champaign Developer Student Club,Victor Bennett,Daniel West,d.west@randatmail.com
+University of Illinois Urbana Champaign Design For America,Blake Ferguson,Edgar Morris,e.morris@randatmail.com
+University of Illinois Urbana Champaign Discussions Undergraduate Research Journal,Kate Thompson,Edgar Barrett,e.barrett@randatmail.com
+University of Michigan Engineers Without Borders,Owen Douglas,Aiden Barrett,a.barrett@randatmail.com
+University of Michigan Girls Who Code,Daisy Thompson,Penelope Watson,p.watson@randatmail.com
+University of Michigan Hackers Society,Aiden Spencer,Briony Russell,b.russell@randatmail.com
+University of Michigan Biomedical Engineering Society,Steven Howard,Edgar Robinson,e.robinson@randatmail.com
+University of Michigan American Institute of Chemical Engineers,Lucia Myers,Kevin Martin,k.martin@randatmail.com
+University of Michigan Baja Sae,Harold Reed,Mehlam Saifudeen,mehlu22@gmail.com
+University of Michigan Aeronautics Team,Jordan Roberts,Madaline Ellis,m.ellis@randatmail.com
+University of Michigan MedWish,Lyndon Walker,Vincent Rogers,v.rogers@randatmail.com
+University of Michigan Rocket Team,Eric Perkins,Myra Moore,m.moore@randatmail.com
+University of Michigan Global Health Design Collaborative,Walter Turner,Kelsey Brown,k.brown@randatmail.com
+University of Michigan Graduate Civil Engineering Student Association,Gianna Holmes,Alford Montgomery,a.montgomery@randatmail.com
+University of Michigan Medical Technology Group,Arnold Carroll,Robert Stewart,r.stewart@randatmail.com
+University of Michigan oSTEM,Penelope Henderson,Tyler Davis,t.davis@randatmail.com
+University of Michigan Society of Hispanic Professional Engineers,Lyndon Robinson,Ted Taylor,t.taylor@randatmail.com
+University of Michigan Society of Women Engineers,Sawyer Montgomery,Carina Carroll,c.carroll@randatmail.com
+University of Michigan Steel Bridge Team,Lilianna Brown,Eleanor Kelly,e.kelly@randatmail.com
+University of Michigan Theta Tau,Anna Reed,April Murray,a.murray@randatmail.com
+University of Michigan Women in Science and Engineering Roundtable,Mary Sullivan,Myra Baker,m.baker@randatmail.com
+University of Michigan American Marketing Association,Reid Richards,Aida Stevens,a.stevens@randatmail.com
+University of Michigan Association for Computing Machinery,Daryl Johnston,Sabrina Brown,s.brown@randatmail.com
+University of Michigan Neuroscience Society,Maddie Richardson,Lily Phillips,l.phillips@randatmail.com
+University of Michigan Orchestra,Elian Kelley,David Turner,d.turner@randatmail.com
+University of Michigan Developer Student Club,Kristian Ferguson,Lucy Sullivan,l.sullivan@randatmail.com
+University of Michigan Design For America,Violet Roberts,Thomas Scott,t.scott@randatmail.com
+University of Michigan Discussions Undergraduate Research Journal,Jacob Douglas,Cherry Cole,c.cole@randatmail.com
+Carnegie Mellon University Engineers Without Borders,Rosie Taylor,Emily Cooper,e.cooper@randatmail.com
+Carnegie Mellon University Girls Who Code,Briony Stevens,Paige Wilson,p.wilson@randatmail.com
+Carnegie Mellon University Hackers Society,Adam Thompson,Nicholas Walker,n.walker@randatmail.com
+Carnegie Mellon University Biomedical Engineering Society,Blake Wells,Alexia Clark,a.clark@randatmail.com
+Carnegie Mellon University American Institute of Chemical Engineers,Haris Alexander,Tara Alexander,t.alexander@randatmail.com
+Carnegie Mellon University Baja Sae,Violet Alexander,Ryan Adams,r.adams@randatmail.com
+Carnegie Mellon University Aeronautics Team,Kelsey Henderson,Julia Lloyd,j.lloyd@randatmail.com
+Carnegie Mellon University MedWish,Patrick Allen,Naomi Montgomery,n.montgomery@randatmail.com
+Carnegie Mellon University Rocket Team,Patrick Parker,Tyler Tucker,t.tucker@randatmail.com
+Carnegie Mellon University Global Health Design Collaborative,Hailey Sullivan,Oliver Ryan,o.ryan@randatmail.com
+Carnegie Mellon University Graduate Civil Engineering Student Association,Chelsea Gray,Vivian Hall,v.hall@randatmail.com
+Carnegie Mellon University Medical Technology Group,Blake Gray,Fenton Andrews,f.andrews@randatmail.com
+Carnegie Mellon University oSTEM,Miranda Rogers,Tara Morgan,t.morgan@randatmail.com
+Carnegie Mellon University Society of Hispanic Professional Engineers,Sophia Nelson,Kelvin Morgan,k.morgan@randatmail.com
+Carnegie Mellon University Society of Women Engineers,Frederick Harrison,Carl Davis,c.davis@randatmail.com
+Carnegie Mellon University Steel Bridge Team,Lucas Payne,Tess Craig,t.craig@randatmail.com
+Carnegie Mellon University Theta Tau,Daryl Owens,Stuart Carter,s.carter@randatmail.com
+Carnegie Mellon University Women in Science and Engineering Roundtable,Dainton Carter,Rafael Watson,r.watson@randatmail.com
+Carnegie Mellon University American Marketing Association,Antony Anderson,Fenton Reed,f.reed@randatmail.com
+Carnegie Mellon University Association for Computing Machinery,Abigail Brooks,Chelsea Andrews,c.andrews@randatmail.com
+Carnegie Mellon University Neuroscience Society,Dexter Riley,Catherine Davis,c.davis@randatmail.com
+Carnegie Mellon University Orchestra,James Carter,Reid Rogers,r.rogers@randatmail.com
+Carnegie Mellon University Developer Student Club,Victor Douglas,Alfred Hunt,a.hunt@randatmail.com
+Carnegie Mellon University Design For America,Spike Stevens,Daisy Bailey,d.bailey@randatmail.com
+Carnegie Mellon University Discussions Undergraduate Research Journal,Cadie Gibson,Briony Kelly,b.kelly@randatmail.com
+New York University Engineers Without Borders,Amy Kelly,Nicholas Wilson,n.wilson@randatmail.com
+New York University Girls Who Code,Derek Harrison,Cadie Kelly,c.kelly@randatmail.com
+New York University Hackers Society,Joyce Stevens,Aida Murphy,a.murphy@randatmail.com
+New York University Biomedical Engineering Society,Alfred Wells,Lydia Bennett,l.bennett@randatmail.com
+New York University American Institute of Chemical Engineers,Savana Johnson,Amanda Kelley,a.kelley@randatmail.com
+New York University Baja Sae,Amy Carter,Sydney Spencer,s.spencer@randatmail.com
+New York University Aeronautics Team,Belinda Adams,Elian Morgan,e.morgan@randatmail.com
+New York University MedWish,Albert Roberts,Alissa Bennett,a.bennett@randatmail.com
+New York University Rocket Team,Andrew Robinson,Edith Scott,e.scott@randatmail.com
+New York University Global Health Design Collaborative,Maria Lloyd,Max Hunt,m.hunt@randatmail.com
+New York University Graduate Civil Engineering Student Association,Vanessa Brown,Arnold Williams,a.williams@randatmail.com
+New York University Medical Technology Group,Jenna Walker,Charlie Douglas,c.douglas@randatmail.com
+New York University oSTEM,Adelaide Farrell,Ryan Alexander,r.alexander@randatmail.com
+New York University Society of Hispanic Professional Engineers,Oscar Ryan,Isabella Thompson,i.thompson@randatmail.com
+New York University Society of Women Engineers,Adelaide Mitchell,Sam Murphy,s.murphy@randatmail.com
+New York University Steel Bridge Team,Dexter Thompson,Ted Payne,t.payne@randatmail.com
+New York University Theta Tau,Stella Brooks,Luke Barrett,l.barrett@randatmail.com
+New York University Women in Science and Engineering Roundtable,Edwin Thompson,Grace Ellis,g.ellis@randatmail.com
+New York University American Marketing Association,Lydia Clark,Ryan Mitchell,r.mitchell@randatmail.com
+New York University Association for Computing Machinery,Audrey Brooks,Miranda Owens,m.owens@randatmail.com
+New York University Neuroscience Society,James Murphy,Roman Murphy,r.murphy@randatmail.com
+New York University Orchestra,Aldus Lloyd,Catherine Johnston,c.johnston@randatmail.com
+New York University Developer Student Club,Alberta Hawkins,Roman Dixon,r.dixon@randatmail.com
+New York University Design For America,Amanda Morris,Tess Cunningham,t.cunningham@randatmail.com
+New York University Discussions Undergraduate Research Journal,Alissa Baker,Jessica Perry,j.perry@randatmail.com
+Columbia University Engineers Without Borders,April Myers,Jack Chapman,j.chapman@randatmail.com
+Columbia University Girls Who Code,Martin Parker,Thomas Mitchell,t.mitchell@randatmail.com
+Columbia University Hackers Society,Rebecca Edwards,Julian Hall,j.hall@randatmail.com
+Columbia University Biomedical Engineering Society,Eleanor Rogers,Chelsea Murphy,c.murphy@randatmail.com
+Columbia University American Institute of Chemical Engineers,Kelsey Harrison,Paige Cole,p.cole@randatmail.com
+Columbia University Baja Sae,Tiana Thompson,Adrianna Ferguson,a.ferguson@randatmail.com
+Columbia University Aeronautics Team,Alexia Moore,Sophia Baker,s.baker@randatmail.com
+Columbia University MedWish,Brianna Perkins,Bruce Brooks,b.brooks@randatmail.com
+Columbia University Rocket Team,Jacob Edwards,Rafael Harrison,r.harrison@randatmail.com
+Columbia University Global Health Design Collaborative,Arianna Kelley,Vanessa Clark,v.clark@randatmail.com
+Columbia University Graduate Civil Engineering Student Association,James Cooper,Sofia Cunningham,s.cunningham@randatmail.com
+Columbia University Medical Technology Group,Edith Baker,Lydia Moore,l.moore@randatmail.com
+Columbia University oSTEM,Edwin Carroll,Aldus Williams,a.williams@randatmail.com
+Columbia University Society of Hispanic Professional Engineers,Alisa Spencer,Tyler Elliott,t.elliott@randatmail.com
+Columbia University Society of Women Engineers,Dexter Harris,Eleanor Parker,e.parker@randatmail.com
+Columbia University Steel Bridge Team,Sienna Cole,Tess Douglas,t.douglas@randatmail.com
+Columbia University Theta Tau,Alina Bennett,Edith Morrison,e.morrison@randatmail.com
+Columbia University Women in Science and Engineering Roundtable,Aida Hamilton,Sophia Richards,s.richards@randatmail.com
+Columbia University American Marketing Association,Lucas Cole,Alen Parker,a.parker@randatmail.com
+Columbia University Association for Computing Machinery,Adison Turner,Grace Ross,g.ross@randatmail.com
+Columbia University Neuroscience Society,Stella Tucker,Sydney Stewart,s.stewart@randatmail.com
+Columbia University Orchestra,Elise Brown,Jared Smith,j.smith@randatmail.com
+Columbia University Developer Student Club,Hailey Watson,Deanna West,d.west@randatmail.com
+Columbia University Design For America,Frederick Wright,Luke Riley,l.riley@randatmail.com
+Columbia University Discussions Undergraduate Research Journal,Eric Reed,Miley Wilson,m.wilson@randatmail.com
+Cornell University Engineers Without Borders,Luke Davis,Belinda Barnes,b.barnes@randatmail.com
+Cornell University Girls Who Code,Andrew Elliott,Olivia Bennett,o.bennett@randatmail.com
+Cornell University Hackers Society,Tess Edwards,Arianna Howard,a.howard@randatmail.com
+Cornell University Biomedical Engineering Society,Chelsea Brown,Chloe Thompson,c.thompson@randatmail.com
+Cornell University American Institute of Chemical Engineers,Daniel Cameron,Antony Murray,a.murray@randatmail.com
+Cornell University Baja Sae,Dainton Sullivan,Charlie Ross,c.ross@randatmail.com
+Cornell University Aeronautics Team,Henry Bailey,Adelaide Hunt,a.hunt@randatmail.com
+Cornell University MedWish,Mike Clark,Frederick Cameron,f.cameron@randatmail.com
+Cornell University Rocket Team,Roland Stevens,Dainton Grant,d.grant@randatmail.com
+Cornell University Global Health Design Collaborative,George Ellis,Madaline Chapman,m.chapman@randatmail.com
+Cornell University Graduate Civil Engineering Student Association,Ted Evans,Alfred Anderson,a.anderson@randatmail.com
+Cornell University Medical Technology Group,Adrianna Johnson,April Evans,a.evans@randatmail.com
+Cornell University oSTEM,Natalie Hall,Melissa Craig,m.craig@randatmail.com
+Cornell University Society of Hispanic Professional Engineers,Kristian Bennett,Tiana Harrison,t.harrison@randatmail.com
+Cornell University Society of Women Engineers,Paige Morris,Alisa Craig,a.craig@randatmail.com
+Cornell University Steel Bridge Team,Jack Thompson,Lana Mason,l.mason@randatmail.com
+Cornell University Theta Tau,Carlos Mason,Garry Ross,g.ross@randatmail.com
+Cornell University Women in Science and Engineering Roundtable,Dale Harris,Maddie Barnes,m.barnes@randatmail.com
+Cornell University American Marketing Association,Brooke Smith,Vincent Richardson,v.richardson@randatmail.com
+Cornell University Association for Computing Machinery,Aida Higgins,Mike Barnes,m.barnes@randatmail.com
+Cornell University Neuroscience Society,Elise Montgomery,Frederick Gray,f.gray@randatmail.com
+Cornell University Orchestra,Edith Jones,Kristian Anderson,k.anderson@randatmail.com
+Cornell University Developer Student Club,Melanie Thompson,Elian Scott,e.scott@randatmail.com
+Cornell University Design For America,Sydney Perkins,Lenny Scott,l.scott@randatmail.com
+Cornell University Discussions Undergraduate Research Journal,Robert Hamilton,Heather Richards,h.richards@randatmail.com
+University of Texas at Austin Engineers Without Borders,Anna Cole,Fenton Ryan,f.ryan@randatmail.com
+University of Texas at Austin Girls Who Code,Adrian Grant,April Walker,a.walker@randatmail.com
+University of Texas at Austin Hackers Society,Sofia Mitchell,Alexia Warren,a.warren@randatmail.com
+University of Texas at Austin Biomedical Engineering Society,Leonardo Bennett,Maria Ferguson,m.ferguson@randatmail.com
+University of Texas at Austin American Institute of Chemical Engineers,Rafael Perkins,Rafael Richards,r.richards@randatmail.com
+University of Texas at Austin Baja Sae,Valeria Myers,Sienna Baker,s.baker@randatmail.com
+University of Texas at Austin Aeronautics Team,Daryl Henderson,Jasmine Clark,j.clark@randatmail.com
+University of Texas at Austin MedWish,Victoria Harper,Florrie Perkins,f.perkins@randatmail.com
+University of Texas at Austin Rocket Team,Kimberly Harper,Lilianna Morris,l.morris@randatmail.com
+University of Texas at Austin Global Health Design Collaborative,Adam Dixon,Haris Martin,h.martin@randatmail.com
+University of Texas at Austin Graduate Civil Engineering Student Association,Derek Brown,Darcy Ferguson,d.ferguson@randatmail.com
+University of Texas at Austin Medical Technology Group,Aiden Ellis,Haris Wilson,h.wilson@randatmail.com
+University of Texas at Austin oSTEM,Oscar Evans,Garry Tucker,g.tucker@randatmail.com
+University of Texas at Austin Society of Hispanic Professional Engineers,Rosie Wright,David Parker,d.parker@randatmail.com
+University of Texas at Austin Society of Women Engineers,David Douglas,Maria Davis,m.davis@randatmail.com
+University of Texas at Austin Steel Bridge Team,Charlotte Davis,Naomi Casey,n.casey@randatmail.com
+University of Texas at Austin Theta Tau,Abraham Thompson,Dale Cole,d.cole@randatmail.com
+University of Texas at Austin Women in Science and Engineering Roundtable,Stella Taylor,Maddie Harris,m.harris@randatmail.com
+University of Texas at Austin American Marketing Association,Kirsten Cooper,Abraham Martin,a.martin@randatmail.com
+University of Texas at Austin Association for Computing Machinery,Deanna Howard,Henry Miller,h.miller@randatmail.com
+University of Texas at Austin Neuroscience Society,Emily Moore,Clark Watson,c.watson@randatmail.com
+University of Texas at Austin Orchestra,Samantha Lloyd,Ryan Casey,r.casey@randatmail.com
+University of Texas at Austin Developer Student Club,Emily Johnson,Abigail Gibson,a.gibson@randatmail.com
+University of Texas at Austin Design For America,Julia Cunningham,Hailey Hunt,h.hunt@randatmail.com
+University of Texas at Austin Discussions Undergraduate Research Journal,Derek Crawford,Charlie Perry,c.perry@randatmail.com
+Michigan State University Engineers Without Borders,Hailey Richards,Freddie Brown,f.brown@randatmail.com
+Michigan State University Girls Who Code,Edgar Harris,Stella Perry,s.perry@randatmail.com
+Michigan State University Hackers Society,Jordan Cooper,Kelvin Thompson,k.thompson@randatmail.com
+Michigan State University Biomedical Engineering Society,Byron Armstrong,David Hamilton,d.hamilton@randatmail.com
+Michigan State University American Institute of Chemical Engineers,Sienna Chapman,Chloe Howard,c.howard@randatmail.com
+Michigan State University Baja Sae,Steven Roberts,Anna Cole,a.cole@randatmail.com
+Michigan State University Aeronautics Team,Oscar Morrison,Natalie Scott,n.scott@randatmail.com
+Michigan State University MedWish,Patrick Wells,Harold Armstrong,h.armstrong@randatmail.com
+Michigan State University Rocket Team,Lilianna Scott,Vanessa Evans,v.evans@randatmail.com
+Michigan State University Global Health Design Collaborative,Wilson West,Thomas Parker,t.parker@randatmail.com
+Michigan State University Graduate Civil Engineering Student Association,Brooke Tucker,Andrew Carter,a.carter@randatmail.com
+Michigan State University Medical Technology Group,Adrianna Mitchell,Miley Clark,m.clark@randatmail.com
+Michigan State University oSTEM,Florrie Kelley,Jessica Armstrong,j.armstrong@randatmail.com
+Michigan State University Society of Hispanic Professional Engineers,Isabella Howard,Aldus Turner,a.turner@randatmail.com
+Michigan State University Society of Women Engineers,Sawyer Chapman,George Cameron,g.cameron@randatmail.com
+Michigan State University Steel Bridge Team,April Grant,George Myers,g.myers@randatmail.com
+Michigan State University Theta Tau,Kevin Wright,Bruce Watson,b.watson@randatmail.com
+Michigan State University Women in Science and Engineering Roundtable,Miranda Russell,Tony Johnston,t.johnston@randatmail.com
+Michigan State University American Marketing Association,Audrey Myers,Elise Tucker,e.tucker@randatmail.com
+Michigan State University Association for Computing Machinery,Sofia Johnson,Sydney Cole,s.cole@randatmail.com
+Michigan State University Neuroscience Society,Dexter Stewart,Frederick Harper,f.harper@randatmail.com
+Michigan State University Orchestra,Arnold Brooks,James Miller,j.miller@randatmail.com
+Michigan State University Developer Student Club,Evelyn Montgomery,Byron Craig,b.craig@randatmail.com
+Michigan State University Design For America,Kirsten Barrett,Rafael Watson,r.watson@randatmail.com
+Michigan State University Discussions Undergraduate Research Journal,Roman Cooper,Aida Jones,a.jones@randatmail.com
+Harvard University Engineers Without Borders,Miranda Hawkins,Sam Sullivan,s.sullivan@randatmail.com
+Harvard University Girls Who Code,Samantha Jones,Alan Grant,a.grant@randatmail.com
+Harvard University Hackers Society,Wilson Craig,Violet Ross,v.ross@randatmail.com
+Harvard University Biomedical Engineering Society,Rafael Scott,Alen Bailey,a.bailey@randatmail.com
+Harvard University American Institute of Chemical Engineers,Tara Edwards,Miley Morrison,m.morrison@randatmail.com
+Harvard University Baja Sae,Fenton Baker,David Cole,d.cole@randatmail.com
+Harvard University Aeronautics Team,Dexter Higgins,Kevin Elliott,k.elliott@randatmail.com
+Harvard University MedWish,Catherine Alexander,Alan Miller,a.miller@randatmail.com
+Harvard University Rocket Team,Dainton Roberts,Justin Hall,j.hall@randatmail.com
+Harvard University Global Health Design Collaborative,Elise Murray,Chester Phillips,c.phillips@randatmail.com
+Harvard University Graduate Civil Engineering Student Association,Brooke West,Caroline Cole,c.cole@randatmail.com
+Harvard University Medical Technology Group,Carl Thomas,Oliver Alexander,o.alexander@randatmail.com
+Harvard University oSTEM,Sabrina Perry,Miranda Stewart,m.stewart@randatmail.com
+Harvard University Society of Hispanic Professional Engineers,Tess Farrell,Justin Richards,j.richards@randatmail.com
+Harvard University Society of Women Engineers,Caroline Allen,Julia Walker,j.walker@randatmail.com
+Harvard University Steel Bridge Team,Brianna Hamilton,Audrey Roberts,a.roberts@randatmail.com
+Harvard University Theta Tau,Kate Lloyd,Daisy Hamilton,d.hamilton@randatmail.com
+Harvard University Women in Science and Engineering Roundtable,Carl Ferguson,James Harris,j.harris@randatmail.com
+Harvard University American Marketing Association,Mike Cole,Edgar Cooper,e.cooper@randatmail.com
+Harvard University Association for Computing Machinery,Violet Martin,Sabrina Allen,s.allen@randatmail.com
+Harvard University Neuroscience Society,Adelaide Sullivan,Edward Reed,e.reed@randatmail.com
+Harvard University Orchestra,James Harris,Jordan Higgins,j.higgins@randatmail.com
+Harvard University Developer Student Club,Mike Douglas,Kellan Murphy,k.murphy@randatmail.com
+Harvard University Design For America,Vincent Moore,James Kelley,j.kelley@randatmail.com
+Harvard University Discussions Undergraduate Research Journal,Tess Spencer,Rebecca Jones,r.jones@randatmail.com
+Boston University Engineers Without Borders,Aldus Perry,Freddie Wilson,f.wilson@randatmail.com
+Boston University Girls Who Code,Freddie Myers,Walter Brown,w.brown@randatmail.com
+Boston University Hackers Society,Naomi Hamilton,Caroline Crawford,c.crawford@randatmail.com
+Boston University Biomedical Engineering Society,Garry Bailey,Lenny Edwards,l.edwards@randatmail.com
+Boston University American Institute of Chemical Engineers,Haris Owens,Hailey Carter,h.carter@randatmail.com
+Boston University Baja Sae,Ryan Armstrong,April Bennett,a.bennett@randatmail.com
+Boston University Aeronautics Team,Adrian Cunningham,Cherry Gray,c.gray@randatmail.com
+Boston University MedWish,Freddie Wilson,Owen Hill,o.hill@randatmail.com
+Boston University Rocket Team,Lenny Armstrong,Dexter Allen,d.allen@randatmail.com
+Boston University Global Health Design Collaborative,Freddie Carter,Brad Riley,b.riley@randatmail.com
+Boston University Graduate Civil Engineering Student Association,Vivian Farrell,Spike Hall,s.hall@randatmail.com
+Boston University Medical Technology Group,Michelle Howard,Grace Smith,g.smith@randatmail.com
+Boston University oSTEM,Heather Miller,Jenna Rogers,j.rogers@randatmail.com
+Boston University Society of Hispanic Professional Engineers,Sawyer Gibson,Derek Hall,d.hall@randatmail.com
+Boston University Society of Women Engineers,Spike Ross,Haris Casey,h.casey@randatmail.com
+Boston University Steel Bridge Team,Myra Richardson,Adelaide Edwards,a.edwards@randatmail.com
+Boston University Theta Tau,Richard Wright,Kellan Stevens,k.stevens@randatmail.com
+Boston University Women in Science and Engineering Roundtable,Honey Lloyd,Emily Andrews,e.andrews@randatmail.com
+Boston University American Marketing Association,Henry Robinson,Oliver Phillips,o.phillips@randatmail.com
+Boston University Association for Computing Machinery,Edwin Russell,Roman Anderson,r.anderson@randatmail.com
+Boston University Neuroscience Society,Alford Owens,Preston Grant,p.grant@randatmail.com
+Boston University Orchestra,Rosie Harris,Camila Dixon,c.dixon@randatmail.com
+Boston University Developer Student Club,Paul Harris,Adam Chapman,a.chapman@randatmail.com
+Boston University Design For America,Freddie Phillips,Sophia Mason,s.mason@randatmail.com
+Boston University Discussions Undergraduate Research Journal,Adrianna Douglas,Rebecca Grant,r.grant@randatmail.com
+Massachusetts Institute of Technology Engineers Without Borders,Alberta Thomas,Edward Gray,e.gray@randatmail.com
+Massachusetts Institute of Technology Girls Who Code,Aida Stewart,Alina Ross,a.ross@randatmail.com
+Massachusetts Institute of Technology Hackers Society,Vanessa Hill,Lily Armstrong,l.armstrong@randatmail.com
+Massachusetts Institute of Technology Biomedical Engineering Society,Lydia Warren,Rubie Nelson,r.nelson@randatmail.com
+Massachusetts Institute of Technology American Institute of Chemical Engineers,Walter Montgomery,Vivian Turner,v.turner@randatmail.com
+Massachusetts Institute of Technology Baja Sae,Paige Brown,Victor Watson,v.watson@randatmail.com
+Massachusetts Institute of Technology Aeronautics Team,Adele Ferguson,Sarah Montgomery,s.montgomery@randatmail.com
+Massachusetts Institute of Technology MedWish,Michelle Turner,Rosie Cooper,r.cooper@randatmail.com
+Massachusetts Institute of Technology Rocket Team,Briony Henderson,Miley Evans,m.evans@randatmail.com
+Massachusetts Institute of Technology Global Health Design Collaborative,Vincent Elliott,Adison Scott,a.scott@randatmail.com
+Massachusetts Institute of Technology Graduate Civil Engineering Student Association,Sofia Carter,Adele Turner,a.turner@randatmail.com
+Massachusetts Institute of Technology Medical Technology Group,James Richards,James Turner,j.turner@randatmail.com
+Massachusetts Institute of Technology oSTEM,Caroline West,Camila Douglas,c.douglas@randatmail.com
+Massachusetts Institute of Technology Society of Hispanic Professional Engineers,Thomas Howard,Brooke Baker,b.baker@randatmail.com
+Massachusetts Institute of Technology Society of Women Engineers,Alissa Alexander,Deanna Davis,d.davis@randatmail.com
+Massachusetts Institute of Technology Steel Bridge Team,Marcus West,Brianna Jones,b.jones@randatmail.com
+Massachusetts Institute of Technology Theta Tau,Michael Hamilton,Wilson Richardson,w.richardson@randatmail.com
+Massachusetts Institute of Technology Women in Science and Engineering Roundtable,Ned Hamilton,Nicole Spencer,n.spencer@randatmail.com
+Massachusetts Institute of Technology American Marketing Association,Annabella Carroll,Sarah Chapman,s.chapman@randatmail.com
+Massachusetts Institute of Technology Association for Computing Machinery,Rosie Richardson,Stuart Ferguson,s.ferguson@randatmail.com
+Massachusetts Institute of Technology Neuroscience Society,Annabella Tucker,Patrick West,p.west@randatmail.com
+Massachusetts Institute of Technology Orchestra,Vincent Perry,Oscar Henderson,o.henderson@randatmail.com
+Massachusetts Institute of Technology Developer Student Club,Miller Tucker,Sienna Kelly,s.kelly@randatmail.com
+Massachusetts Institute of Technology Design For America,Hailey Douglas,Vanessa Allen,v.allen@randatmail.com
+Massachusetts Institute of Technology Discussions Undergraduate Research Journal,Oscar Cole,Lucy Morgan,l.morgan@randatmail.com
+Northeastern University Engineers Without Borders,George Murray,Chloe Reed,c.reed@randatmail.com
+Northeastern University Girls Who Code,Valeria Montgomery,Paige Hamilton,p.hamilton@randatmail.com
+Northeastern University Hackers Society,Antony Wells,Jack Robinson,j.robinson@randatmail.com
+Northeastern University Biomedical Engineering Society,Catherine Mason,Hailey Henderson,h.henderson@randatmail.com
+Northeastern University American Institute of Chemical Engineers,Miller Carter,Rubie Phillips,r.phillips@randatmail.com
+Northeastern University Baja Sae,Kimberly Thompson,Robert Gibson,r.gibson@randatmail.com
+Northeastern University Aeronautics Team,Alan Hall,Michelle Wilson,m.wilson@randatmail.com
+Northeastern University MedWish,John Ferguson,Jenna Spencer,j.spencer@randatmail.com
+Northeastern University Rocket Team,Sarah Holmes,Victor Ferguson,v.ferguson@randatmail.com
+Northeastern University Global Health Design Collaborative,Antony Ross,Daryl Jones,d.jones@randatmail.com
+Northeastern University Graduate Civil Engineering Student Association,Oliver Alexander,Kevin Moore,k.moore@randatmail.com
+Northeastern University Medical Technology Group,Clark Richardson,Daryl Morgan,d.morgan@randatmail.com
+Northeastern University oSTEM,Paige Spencer,Jacob Grant,j.grant@randatmail.com
+Northeastern University Society of Hispanic Professional Engineers,Kate West,Eddy Watson,e.watson@randatmail.com
+Northeastern University Society of Women Engineers,Grace Brooks,Eddy Smith,e.smith@randatmail.com
+Northeastern University Steel Bridge Team,Madaline Moore,Miller Montgomery,m.montgomery@randatmail.com
+Northeastern University Theta Tau,Chloe Lloyd,Owen Allen,o.allen@randatmail.com
+Northeastern University Women in Science and Engineering Roundtable,Spike Morgan,Michelle Elliott,m.elliott@randatmail.com
+Northeastern University American Marketing Association,Melanie Edwards,Haris Higgins,h.higgins@randatmail.com
+Northeastern University Association for Computing Machinery,Cherry Crawford,Aston Richards,a.richards@randatmail.com
+Northeastern University Neuroscience Society,Aiden Hill,Audrey Adams,a.adams@randatmail.com
+Northeastern University Orchestra,Aiden Perkins,Owen Hall,o.hall@randatmail.com
+Northeastern University Developer Student Club,Paige Campbell,Dainton Stewart,d.stewart@randatmail.com
+Northeastern University Design For America,Caroline Murphy,Alina Ferguson,a.ferguson@randatmail.com
+Northeastern University Discussions Undergraduate Research Journal,Bruce Thompson,Aida Johnson,a.johnson@randatmail.com
+Harvey Mudd College Engineers Without Borders,Aida Kelley,George Anderson,g.anderson@randatmail.com
+Harvey Mudd College Girls Who Code,Max Morris,Daisy Hill,d.hill@randatmail.com
+Harvey Mudd College Hackers Society,Oliver Scott,Alexia Foster,a.foster@randatmail.com
+Harvey Mudd College Biomedical Engineering Society,Rosie Montgomery,Lana Hamilton,l.hamilton@randatmail.com
+Harvey Mudd College American Institute of Chemical Engineers,Tara Bennett,Lily Riley,l.riley@randatmail.com
+Harvey Mudd College Baja Sae,David Bailey,Honey Evans,h.evans@randatmail.com
+Harvey Mudd College Aeronautics Team,Victor Barrett,Nicholas Brooks,n.brooks@randatmail.com
+Harvey Mudd College MedWish,Alexander Robinson,Eddy Perkins,e.perkins@randatmail.com
+Harvey Mudd College Rocket Team,Andrew Johnston,Honey Richardson,h.richardson@randatmail.com
+Harvey Mudd College Global Health Design Collaborative,Jared Thompson,Jenna Carroll,j.carroll@randatmail.com
+Harvey Mudd College Graduate Civil Engineering Student Association,Ellia Carter,Carl Murphy,c.murphy@randatmail.com
+Harvey Mudd College Medical Technology Group,Adam Perry,Stella Morgan,s.morgan@randatmail.com
+Harvey Mudd College oSTEM,Amber Thomas,Amber Grant,a.grant@randatmail.com
+Harvey Mudd College Society of Hispanic Professional Engineers,Rebecca Anderson,Michelle Thomas,m.thomas@randatmail.com
+Harvey Mudd College Society of Women Engineers,Dominik Richardson,Arthur Stevens,a.stevens@randatmail.com
+Harvey Mudd College Steel Bridge Team,Alexia Gray,Julian Elliott,j.elliott@randatmail.com
+Harvey Mudd College Theta Tau,Luke Morgan,Roman Martin,r.martin@randatmail.com
+Harvey Mudd College Women in Science and Engineering Roundtable,Tara Bailey,Luke Thompson,l.thompson@randatmail.com
+Harvey Mudd College American Marketing Association,Alfred Parker,Henry Hunt,h.hunt@randatmail.com
+Harvey Mudd College Association for Computing Machinery,George Bennett,Violet Perry,v.perry@randatmail.com
+Harvey Mudd College Neuroscience Society,Paige Alexander,Eddy Mitchell,e.mitchell@randatmail.com
+Harvey Mudd College Orchestra,Lucas Murray,Camila Phillips,c.phillips@randatmail.com
+Harvey Mudd College Developer Student Club,Emma Morgan,Aiden Dixon,a.dixon@randatmail.com
+Harvey Mudd College Design For America,Valeria Howard,Spike Richardson,s.richardson@randatmail.com
+Harvey Mudd College Discussions Undergraduate Research Journal,Marcus Montgomery,Amber Tucker,a.tucker@randatmail.com
+Middlebury College Engineers Without Borders,Alfred Kelly,Abraham Baker,a.baker@randatmail.com
+Middlebury College Girls Who Code,Briony Russell,Emma Gibson,e.gibson@randatmail.com
+Middlebury College Hackers Society,Cherry Harper,Amy Phillips,a.phillips@randatmail.com
+Middlebury College Biomedical Engineering Society,Emma Lloyd,Oliver Ross,o.ross@randatmail.com
+Middlebury College American Institute of Chemical Engineers,Charlie Lloyd,Anna Allen,a.allen@randatmail.com
+Middlebury College Baja Sae,Sydney Myers,Emma Robinson,e.robinson@randatmail.com
+Middlebury College Aeronautics Team,Florrie Harris,Richard Adams,r.adams@randatmail.com
+Middlebury College MedWish,Anna Bennett,Amber Ellis,a.ellis@randatmail.com
+Middlebury College Rocket Team,Rebecca Allen,Steven Bennett,s.bennett@randatmail.com
+Middlebury College Global Health Design Collaborative,Nicholas Harris,April Lloyd,a.lloyd@randatmail.com
+Middlebury College Graduate Civil Engineering Student Association,Arianna Nelson,Cadie Myers,c.myers@randatmail.com
+Middlebury College Medical Technology Group,Gianna Anderson,Abigail Richardson,a.richardson@randatmail.com
+Middlebury College oSTEM,Miranda Cameron,Ted Thomas,t.thomas@randatmail.com
+Middlebury College Society of Hispanic Professional Engineers,Amy Nelson,Amanda Carroll,a.carroll@randatmail.com
+Middlebury College Society of Women Engineers,Darcy Morgan,Alisa Reed,a.reed@randatmail.com
+Middlebury College Steel Bridge Team,Bruce Robinson,Dainton Henderson,d.henderson@randatmail.com
+Middlebury College Theta Tau,Stuart Morgan,Nicole Crawford,n.crawford@randatmail.com
+Middlebury College Women in Science and Engineering Roundtable,Alexander Hill,Roland Gibson,r.gibson@randatmail.com
+Middlebury College American Marketing Association,Jack Gibson,Edith Foster,e.foster@randatmail.com
+Middlebury College Association for Computing Machinery,Maya Wells,Adrian Campbell,a.campbell@randatmail.com
+Middlebury College Neuroscience Society,Byron Perkins,Frederick Alexander,f.alexander@randatmail.com
+Middlebury College Orchestra,Jasmine Barrett,Cadie Cole,c.cole@randatmail.com
+Middlebury College Developer Student Club,Isabella Richardson,Frederick Cole,f.cole@randatmail.com
+Middlebury College Design For America,Lydia Thompson,Sydney Morris,s.morris@randatmail.com
+Middlebury College Discussions Undergraduate Research Journal,Haris Morris,Carlos Jones,c.jones@randatmail.com
+University of Pennsylvania  Engineers Without Borders,Tyler Douglas,Alexia Anderson,a.anderson@randatmail.com
+University of Pennsylvania  Girls Who Code,Haris Thomas,Kate Morgan,k.morgan@randatmail.com
+University of Pennsylvania  Hackers Society,James Parker,Adrianna Carter,a.carter@randatmail.com
+University of Pennsylvania  Biomedical Engineering Society,Arianna Craig,Miley Perry,m.perry@randatmail.com
+University of Pennsylvania  American Institute of Chemical Engineers,Cherry Kelley,Cherry Campbell,c.campbell@randatmail.com
+University of Pennsylvania  Baja Sae,Roman Russell,Edwin Adams,e.adams@randatmail.com
+University of Pennsylvania  Aeronautics Team,Julian Holmes,Nicole Gibson,n.gibson@randatmail.com
+University of Pennsylvania  MedWish,Dexter Armstrong,Nicole Stewart,n.stewart@randatmail.com
+University of Pennsylvania  Rocket Team,Anna Perry,Alan Wright,a.wright@randatmail.com
+University of Pennsylvania  Global Health Design Collaborative,Catherine Elliott,Briony Murphy,b.murphy@randatmail.com
+University of Pennsylvania  Graduate Civil Engineering Student Association,Frederick Hill,Alisa Fowler,a.fowler@randatmail.com
+University of Pennsylvania  Medical Technology Group,Grace Morris,Ellia Miller,e.miller@randatmail.com
+University of Pennsylvania  oSTEM,Sofia Foster,William Foster,w.foster@randatmail.com
+University of Pennsylvania  Society of Hispanic Professional Engineers,Justin Holmes,Harold Farrell,h.farrell@randatmail.com
+University of Pennsylvania  Society of Women Engineers,Reid Clark,Andrew Murphy,a.murphy@randatmail.com
+University of Pennsylvania  Steel Bridge Team,Albert Alexander,Stuart Chapman,s.chapman@randatmail.com
+University of Pennsylvania  Theta Tau,Lily Douglas,Ellia Gibson,e.gibson@randatmail.com
+University of Pennsylvania  Women in Science and Engineering Roundtable,Reid Wells,Charlie Ferguson,c.ferguson@randatmail.com
+University of Pennsylvania  American Marketing Association,Annabella Russell,Alexander Barrett,a.barrett@randatmail.com
+University of Pennsylvania  Association for Computing Machinery,Lily Bennett,Lucas Stewart,l.stewart@randatmail.com
+University of Pennsylvania  Neuroscience Society,Sam Roberts,Miley Armstrong,m.armstrong@randatmail.com
+University of Pennsylvania  Orchestra,Tess Baker,Heather Dixon,h.dixon@randatmail.com
+University of Pennsylvania  Developer Student Club,Luke Hunt,Fiona Mason,f.mason@randatmail.com
+University of Pennsylvania  Design For America,Lyndon Nelson,Rebecca Moore,r.moore@randatmail.com
+University of Pennsylvania  Discussions Undergraduate Research Journal,Harold Armstrong,Violet Gibson,v.gibson@randatmail.com
+University of Florida at Miami Engineers Without Borders,Tony Carroll,Nicholas Miller,n.miller@randatmail.com
+University of Florida at Miami Girls Who Code,Reid Kelly,Ryan Brown,r.brown@randatmail.com
+University of Florida at Miami Hackers Society,Arthur Myers,Paul Payne,p.payne@randatmail.com
+University of Florida at Miami Biomedical Engineering Society,Daisy Richards,Tiana Cameron,t.cameron@randatmail.com
+University of Florida at Miami American Institute of Chemical Engineers,Natalie Bailey,Abraham Hamilton,a.hamilton@randatmail.com
+University of Florida at Miami Baja Sae,Julia Wright,Ellia Smith,e.smith@randatmail.com
+University of Florida at Miami Aeronautics Team,Jenna Taylor,Paige Campbell,p.campbell@randatmail.com
+University of Florida at Miami MedWish,Walter Thomas,Amanda Moore,a.moore@randatmail.com
+University of Florida at Miami Rocket Team,Adele Evans,April Williams,a.williams@randatmail.com
+University of Florida at Miami Global Health Design Collaborative,Kevin Hamilton,Daniel Cooper,d.cooper@randatmail.com
+University of Florida at Miami Graduate Civil Engineering Student Association,Jasmine Reed,David Miller,d.miller@randatmail.com
+University of Florida at Miami Medical Technology Group,David Henderson,Alisa Myers,a.myers@randatmail.com
+University of Florida at Miami oSTEM,Chelsea Morrison,Wilson Wells,w.wells@randatmail.com
+University of Florida at Miami Society of Hispanic Professional Engineers,Richard Morris,Samantha Montgomery,s.montgomery@randatmail.com
+University of Florida at Miami Society of Women Engineers,Julia Chapman,Natalie Parker,n.parker@randatmail.com
+University of Florida at Miami Steel Bridge Team,Evelyn Hill,Oliver Alexander,o.alexander@randatmail.com
+University of Florida at Miami Theta Tau,Adrian Thomas,Jenna Edwards,j.edwards@randatmail.com
+University of Florida at Miami Women in Science and Engineering Roundtable,Henry Stewart,Isabella Gibson,i.gibson@randatmail.com
+University of Florida at Miami American Marketing Association,Eric Johnson,Byron Holmes,b.holmes@randatmail.com
+University of Florida at Miami Association for Computing Machinery,Eddy Johnson,Naomi Dixon,n.dixon@randatmail.com
+University of Florida at Miami Neuroscience Society,John Adams,Tiana Richardson,t.richardson@randatmail.com
+University of Florida at Miami Orchestra,Brad Richards,Florrie Hall,f.hall@randatmail.com
+University of Florida at Miami Developer Student Club,Cadie Bailey,Caroline Davis,c.davis@randatmail.com
+University of Florida at Miami Design For America,Adele Allen,Kevin Hawkins,k.hawkins@randatmail.com
+University of Florida at Miami Discussions Undergraduate Research Journal,Vanessa Higgins,Bruce Ross,b.ross@randatmail.com
+Yale University Engineers Without Borders,Kelsey Martin,Tess Evans,t.evans@randatmail.com
+Yale University Girls Who Code,Savana Ferguson,Sofia Baker,s.baker@randatmail.com
+Yale University Hackers Society,Grace West,Eleanor Turner,e.turner@randatmail.com
+Yale University Biomedical Engineering Society,Grace Morgan,Mike Montgomery,m.montgomery@randatmail.com
+Yale University American Institute of Chemical Engineers,Samantha Armstrong,David Martin,d.martin@randatmail.com
+Yale University Baja Sae,Edith Hill,Blake Cunningham,b.cunningham@randatmail.com
+Yale University Aeronautics Team,Adison Owens,Owen Chapman,o.chapman@randatmail.com
+Yale University MedWish,Rebecca Ferguson,Amy Cole,a.cole@randatmail.com
+Yale University Rocket Team,Edith Adams,Jordan Andrews,j.andrews@randatmail.com
+Yale University Global Health Design Collaborative,Haris Tucker,Adele Chapman,a.chapman@randatmail.com
+Yale University Graduate Civil Engineering Student Association,Preston West,Adele Dixon,a.dixon@randatmail.com
+Yale University Medical Technology Group,Emma Wright,Sabrina Morris,s.morris@randatmail.com
+Yale University oSTEM,Catherine Morgan,Caroline Cameron,c.cameron@randatmail.com
+Yale University Society of Hispanic Professional Engineers,Bruce Perry,Frederick Brown,f.brown@randatmail.com
+Yale University Society of Women Engineers,Edgar Myers,Abraham Carroll,a.carroll@randatmail.com
+Yale University Steel Bridge Team,Lilianna Crawford,Penelope Myers,p.myers@randatmail.com
+Yale University Theta Tau,Amanda Murphy,James Kelley,j.kelley@randatmail.com
+Yale University Women in Science and Engineering Roundtable,Clark Montgomery,Justin Harris,j.harris@randatmail.com
+Yale University American Marketing Association,Victoria Richards,Kirsten Scott,k.scott@randatmail.com
+Yale University Association for Computing Machinery,William Cooper,Preston Nelson,p.nelson@randatmail.com
+Yale University Neuroscience Society,Dominik Grant,Lucia Casey,l.casey@randatmail.com
+Yale University Orchestra,Aiden Higgins,Vincent Harper,v.harper@randatmail.com
+Yale University Developer Student Club,Alissa Smith,Joyce Holmes,j.holmes@randatmail.com
+Yale University Design For America,Derek Miller,Edwin Kelley,e.kelley@randatmail.com
+Yale University Discussions Undergraduate Research Journal,Audrey Warren,Caroline Walker,c.walker@randatmail.com
+Pomona College Engineers Without Borders,Alan Baker,Luke Martin,l.martin@randatmail.com
+Pomona College Girls Who Code,Arthur Cameron,Owen Holmes,o.holmes@randatmail.com
+Pomona College Hackers Society,Charlotte Ryan,Sophia Hill,s.hill@randatmail.com
+Pomona College Biomedical Engineering Society,Oscar Thomas,Cadie Thomas,c.thomas@randatmail.com
+Pomona College American Institute of Chemical Engineers,Arnold Cameron,Catherine Wilson,c.wilson@randatmail.com
+Pomona College Baja Sae,Vincent Lloyd,Amy Mitchell,a.mitchell@randatmail.com
+Pomona College Aeronautics Team,Alina Taylor,Edgar Watson,e.watson@randatmail.com
+Pomona College MedWish,Clark Farrell,Edgar Davis,e.davis@randatmail.com
+Pomona College Rocket Team,Victoria Robinson,Mary Campbell,m.campbell@randatmail.com
+Pomona College Global Health Design Collaborative,Honey Alexander,Ted Douglas,t.douglas@randatmail.com
+Pomona College Graduate Civil Engineering Student Association,Eleanor Armstrong,Lilianna Morrison,l.morrison@randatmail.com
+Pomona College Medical Technology Group,Steven Clark,Tiana Watson,t.watson@randatmail.com
+Pomona College oSTEM,Dainton Hunt,Arianna Cunningham,a.cunningham@randatmail.com
+Pomona College Society of Hispanic Professional Engineers,Steven Roberts,Edward Bailey,e.bailey@randatmail.com
+Pomona College Society of Women Engineers,Florrie Wells,Kristian Ryan,k.ryan@randatmail.com
+Pomona College Steel Bridge Team,Robert Owens,Maddie Carroll,m.carroll@randatmail.com
+Pomona College Theta Tau,Rebecca Alexander,Thomas Carroll,t.carroll@randatmail.com
+Pomona College Women in Science and Engineering Roundtable,Freddie Carroll,James Mason,j.mason@randatmail.com
+Pomona College American Marketing Association,Sydney Sullivan,Emma Campbell,e.campbell@randatmail.com
+Pomona College Association for Computing Machinery,Abigail Sullivan,Spike Murphy,s.murphy@randatmail.com
+Pomona College Neuroscience Society,Paige Lloyd,Maria Campbell,m.campbell@randatmail.com
+Pomona College Orchestra,Steven Cunningham,Roland Douglas,r.douglas@randatmail.com
+Pomona College Developer Student Club,Alisa Lloyd,Miranda Moore,m.moore@randatmail.com
+Pomona College Design For America,Frederick Brooks,Melissa Harrison,m.harrison@randatmail.com
+Pomona College Discussions Undergraduate Research Journal,Adison Murphy,Heather Moore,h.moore@randatmail.com
+University of California at Berkeley Engineers Without Borders,Vivian Morris,Ellia Hamilton,e.hamilton@randatmail.com
+University of California at Berkeley Girls Who Code,Abraham Gray,Carl Farrell,c.farrell@randatmail.com
+University of California at Berkeley Hackers Society,Clark Johnston,Walter Kelly,w.kelly@randatmail.com
+University of California at Berkeley Biomedical Engineering Society,Ryan Carter,Camila Scott,c.scott@randatmail.com
+University of California at Berkeley American Institute of Chemical Engineers,Dexter Johnson,Kate Nelson,k.nelson@randatmail.com
+University of California at Berkeley Baja Sae,Eddy Evans,Edgar Sullivan,e.sullivan@randatmail.com
+University of California at Berkeley Aeronautics Team,Julia Harris,Gianna Spencer,g.spencer@randatmail.com
+University of California at Berkeley MedWish,Naomi Hawkins,Vincent Harris,v.harris@randatmail.com
+University of California at Berkeley Rocket Team,Brianna Fowler,Daniel Morrison,d.morrison@randatmail.com
+University of California at Berkeley Global Health Design Collaborative,Naomi Lloyd,Julian Hamilton,j.hamilton@randatmail.com
+University of California at Berkeley Graduate Civil Engineering Student Association,Brooke Watson,Arnold Barrett,a.barrett@randatmail.com
+University of California at Berkeley Medical Technology Group,Carina Foster,Savana Nelson,s.nelson@randatmail.com
+University of California at Berkeley oSTEM,Abraham Armstrong,Kimberly Evans,k.evans@randatmail.com
+University of California at Berkeley Society of Hispanic Professional Engineers,Lucia Smith,Chelsea Miller,c.miller@randatmail.com
+University of California at Berkeley Society of Women Engineers,Edwin Gibson,Mary Jones,m.jones@randatmail.com
+University of California at Berkeley Steel Bridge Team,Cherry Morris,Isabella Hill,i.hill@randatmail.com
+University of California at Berkeley Theta Tau,Florrie Rogers,Richard Turner,r.turner@randatmail.com
+University of California at Berkeley Women in Science and Engineering Roundtable,Jordan Taylor,Agata Bailey,a.bailey@randatmail.com
+University of California at Berkeley American Marketing Association,Kellan Mason,Marcus Baker,m.baker@randatmail.com
+University of California at Berkeley Association for Computing Machinery,Aiden Spencer,Alexander Wells,a.wells@randatmail.com
+University of California at Berkeley Neuroscience Society,Michelle Hunt,Kelvin Kelley,k.kelley@randatmail.com
+University of California at Berkeley Orchestra,Marcus Spencer,Daisy Baker,d.baker@randatmail.com
+University of California at Berkeley Developer Student Club,Tony Cole,Madaline Turner,m.turner@randatmail.com
+University of California at Berkeley Design For America,Alexander Carter,Garry Craig,g.craig@randatmail.com
+University of California at Berkeley Discussions Undergraduate Research Journal,Edith Clark,Heather Armstrong,h.armstrong@randatmail.com

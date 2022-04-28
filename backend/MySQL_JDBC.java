@@ -37,6 +37,7 @@ public class MySQL_JDBC {
       // Statement stmt = conn.createStatement();
       ) {
         
+         conn.setAutoCommit(true);
          /* Creates db and corresponding tables */
          ScriptRunner sr = new ScriptRunner(conn);
          Reader reader = new BufferedReader(new FileReader("backend/sql_files/tables.sql"));
@@ -45,6 +46,8 @@ public class MySQL_JDBC {
          /*Parsing CSV (fake data) files */
           Reader reader2 = new BufferedReader(new FileReader("backend/sql_files/parsedData.sql"));
           sr.runScript(reader2);
+          Reader reader3 = new BufferedReader(new FileReader("backend/sql_files/parsedDataRelationships.sql"));
+          sr.runScript(reader3);
 
          /* Query imported and read, based on what user wants to do */
          Scanner s = new Scanner(System.in);

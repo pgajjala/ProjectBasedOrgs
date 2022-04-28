@@ -15,8 +15,8 @@ CREATE TABLE project_based_orgs.official_organization (
 
 DROP TABLE IF EXISTS project_based_orgs.project;
 CREATE TABLE project_based_orgs.project (
-  project_id int NOT NULL AUTO_INCREMENT,
   project_title varchar(250) NOT NULL,
+  project_id int NOT NULL AUTO_INCREMENT,
   project_contact varchar(250) NOT NULL,
   project_description varchar(250) NOT NULL,
   budget int NOT NULL,
@@ -77,13 +77,13 @@ CREATE TABLE project_based_orgs.works_on (
 
 
 DROP TABLE IF EXISTS project_based_orgs.utilizes;
-CREATE TABLE utilizes (
+CREATE TABLE project_based_orgs.utilizes (
   project_title varchar(250) NOT NULL,
-  technoloy_name varchar(250) NOT NULL,
+  technology_name varchar(250) NOT NULL,
   KEY projecttitle_fk_idx (project_title),
-  KEY technologyname_fk_idx (technoloy_name),
+  KEY technologyname_fk_idx (technology_name),
   CONSTRAINT projecttitle_fk FOREIGN KEY (project_title) REFERENCES project (project_title) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT technologyname_fk FOREIGN KEY (technoloy_name) REFERENCES technology (technology_name) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT technologyname_fk FOREIGN KEY (technology_name) REFERENCES technology (technology_name) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 
