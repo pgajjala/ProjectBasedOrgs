@@ -1,5 +1,5 @@
 university_name,city,state,website
-Case Western Reserve Unviersity,Cleveland,Ohio,case.edu 
+Case Western Reserve University,Cleveland,Ohio,case.edu 
 Ohio State University  ,Columbus,Ohio,osu.edu 
 Indiana University,Bloomington,Indiana,iu.edu
 University of Pennsylvania ,Philadelphia ,Pennsylvania ,upenn.edu
@@ -12,14 +12,14 @@ Columbia University,,New York,
 Cornell University,Ithaca,New York,
 University of Texas at Austin,Austin,Texas,
 Michigan State University,,Michigan,
-Harvard University,Boston,Massechusetts,
-Boston Unversity,Boston,Massechusetts,
-Massachusetts Institute of Technology,Boston,Massechusetts,
-Northeastern University,Boston,Massechusetts,
-Harvy Mudd College,,California,
+Harvard University,Boston,Massachusetts,
+Boston University,Boston,Massachusetts,
+Massachusetts Institute of Technology,Boston,Massachusetts,mit.edu
+Northeastern University,Boston,Massachusetts,
+Harvey Mudd College,,California,
 Middlebury College,,Vermont,
 University of Pennsylvania ,Philadelphia,Pennsylvania ,
 University of Florida at Miami,Miami,Florida,
 Yale University,Hartford,Connecticut,
 Pomona College,,California,
-University of California at Berkley,,California,
+University of California at Berkeley,,California,
