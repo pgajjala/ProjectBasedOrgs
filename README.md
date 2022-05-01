@@ -29,12 +29,6 @@ Technologies used:
 - SQLite
 - JDBC driver
 
-For reference for teammates
-- https://www.tutorialspoint.com/sqlite/sqlite_java.htm
+This code cannot be run without the information stored on an untracked.txt file. For inquiries, 
+please email pjg83@case.edu. 
 
-Office hours notes 4/11
-- 5 to 10 queries
-- difficulty doesnt matter
-- technology sorting has to be a Java solution
-- print out tables
-- show all results from each query
